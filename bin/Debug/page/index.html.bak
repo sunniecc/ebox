@@ -1,0 +1,1190 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+<script type="text/javascript" src="js/delay.js"></script>
+<script type="text/javascript" src="js/validate.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<link href="js/swf.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.info_c1,.vedio,.info1_c1,.info1_c2,.info1_c3,.info2_c1,.info3_c1,.info4_c1,.info5_c1,.info6_c1,.info8_c1,.info15_c1,.info15_c2,.info18_c1,.info18_c2,.info5_c1,.info_t0,.info_t2,.info_t3,.info_t4,.text1,.keyboard1,.ll1,.ll2
+	{
+	display: none;
+}
+
+.keyboard {
+	width: 955px;
+	float: center;
+	margin-left: 160px;
+	margin-top: 340px;
+	position: relative;
+}
+
+.keyboard div {
+	float: left;
+}
+
+.keyboard div .key {
+	background: url(images/1.png) no-repeat;
+	float: left;
+	width: 60px;
+	height: 70px;
+	padding-right : 10px;
+	font-size: 20px;
+	line-height: 60px;
+	color: #6F12FF;
+	
+}
+
+.keyboard .rowone,.keyboard .rowfour {
+	margin-left: -22px;
+}
+
+.keyboard .rowtwo {
+	margin-left: 12px;
+}
+
+.keyboard .rowthree {
+	margin-left: 48px;
+}
+
+.txta {
+	background: url(images/input.jpg) no-repeat;
+	float: left;
+	margin-left: 8px;
+	margin-top: 190px;
+	border:0px;
+	height: 79px;
+	width: 79px;
+	font-size: 50px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.text {
+	margin-left: 100px;
+}
+
+#txt_yzmm {
+	height: 0px;
+	width: 0px;
+	display: none;
+}
+
+.keyboard div .key1 {
+	background: url(images/1.png) no-repeat;
+	float: left;
+	width: 79px;
+	height: 79px;
+	margin: 3px 4.5px;
+	font-size: 30px;
+	line-height: 50px;
+	border: 1;
+	border-color: #c3c3c3;
+	color: #333;
+	text-align: center;
+}
+
+#del,#enter {
+	background: url(images/key1.png) no-repeat;
+	width: 132px;
+}
+
+.txt1 {
+	margin-left: 150px;
+}
+
+.botcc3l {
+	margin-left: 126px;
+	margin-top: -45px;
+	float: center;
+}
+
+.botcc3l1 {
+	margin-right: 20px;
+	margin-top: -21px;
+	float: center;
+}
+
+.ebox {
+	float: center;
+	margin-left: 20px;
+	width: 970px;
+	height: 364px;
+	border-color: #FF00FF;
+	border-width: 2px;
+}
+
+#scrollbar1 {
+	width: 900px;
+	margin: 41px 0 10px;
+}
+
+#scrollbar1 .viewport {
+	width: 830px;
+	height: 420px;
+	overflow: auto;
+	position: relative;
+}
+
+#scrollbar1 .overview {
+	list-style: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#scrollbar1 .scrollbar {
+	position: relative;
+	background-position: 0 0;
+	float: right;
+	width: 15px;
+}
+
+#scrollbar1 .track {
+	height: 100%;
+	width: 13px;
+	position: relative;
+	padding: 0 1px;
+}
+
+#scrollbar1 .thumb {
+	background: transparent url(images/info/bg-scrollbar-thumb-y.png)
+		no-repeat 50% 100%;
+	height: 20px;
+	width: 25px;
+	cursor: pointer;
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	left: -5px;
+}
+
+#scrollbar1 .thumb .end {
+	background: transparent url(images/info/bg-scrollbar-thumb-y.png)
+		no-repeat 50% 0;
+	overflow: auto;
+	height: 5px;
+	width: 25px;
+}
+
+#scrollbar1 .disable {
+	display: none;
+}
+
+.noSelect {
+	user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+body {
+	scrollbar-face-color: #ffffff;
+	scrollbar-highlight-color: #e98127;
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-arrow-color: #e98127;
+	scrollbar-base-color: #ffffff;
+	scrollbar-dark-shadow-color: #ffffff;
+}
+.enter .exit{
+}
+
+.enterPickUp{
+	left  :298px;
+	bottom:20px;
+	position:fixed;
+}
+
+.courierLog {
+	height: 80px;
+	width:  80px;
+	float:  left;
+}
+
+.amdroiLog {
+	height: 80px;
+	width:  80px;
+	float:  right;
+}
+
+
+
+#box {
+    height: 277px;
+    width: 955px;
+    background: url(i/4-2.png) no-repeat;
+    padding-top: 26.5px;
+    margin: auto;
+    background-size: 100% 100%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+	
+#box span {
+		
+	float:left;
+	margin-left  : 5.4px;
+	margin-right : 4.8px;
+}
+
+#box  span div{
+	height : 27px;
+	width  : 34px;
+	background: url(i/3-1.png) no-repeat;
+	margin-bottom : 3.4px;
+}
+
+#spanLy {
+	height : 277px;
+	width : 60px;
+	margin-left  : 0px;
+	margin-right : 0px;
+}
+
+#mouthOpen {
+	padding-top : 50px;
+}
+
+#btnOk {
+	margin-bottom: 40px;
+}
+
+#mouthEbox {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.buttonPos {
+	margin-top : 580px;
+}
+
+</style>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body>
+	<!-- 音频 -->
+	<div class="vedio">
+		<embed src="mp3/导航_一路航女11.mp3"                                id="eboxembed" style="display:none" loop=false autostart=false name=bgss type="audio/mpeg" hidden="true"/>
+		<embed src="mp3/请输入您的手机号码和登录密码.mp3"                   		id="em0" autostart="false" hidden="true" loop="false"/>
+		<embed src="mp3/存件请点击左边按钮.mp3"                             	id="em1" autostart="false" hidden="true" loop="false"/>
+		<embed src="mp3/请扫描包裹运单号.mp3"                               	id="em2" autostart="false" hidden="true" loop="false"/>
+		<embed src="mp3/请输入收件人手机号码.mp3"                           	id="em3" autostart="false" hidden="true" loop="false"/>2014/10/21
+		<embed src="mp3/请再次输入.mp3"                                    id="em4" autostart="false" hidden="true" loop="false"/>
+		<embed src="mp3/请选择操作选项.mp3"                                  id="em10" autostart="false" hidden="true" loop="false"/>
+		<embed src="mp3/请选择您要进一步操作的包裹.mp3"                     		id="em5" autostart="false" hidden="true" loop="false"/>
+		<embed src="mp3/柜门已经打开，请取走您的包裹.mp3"                   		id="em6" autostart="false" hidden="true" loop="false"/>
+		<embed src="mp3/请输入您的手机号码和验证码.mp3"                     		id="em7" autostart="false" hidden="true" loop="false"/>
+		<embed src="mp3/您输入的验证码或手机号码有误，请核实后重新输入.mp3" 			id="em8" autostart="false" hidden="true" loop="false"/>
+		<embed src="mp3/麻烦您关闭柜门，感谢您的使用.mp3"                   		id="em9" autostart="false" hidden="true" loop="false"/>
+	</div>
+	<div class="w1024 info_all" id="inall" >	
+		<div class="info5_c" >
+					<span class= "enter  courierLog"  >
+							<font size = "6">
+									快递员
+							</font>
+					</span>
+					<span class= "enter  amdroiLog" >							
+							<font size = "6">
+									管理员
+							</font>
+					</span>
+					<img src="images/click.jpg" class="img1 enter enterPickUp" />
+		</div>
+		<!-- 快递员登录 -->
+		<!-- 用户名密码登录页-c2 -->
+		<div class="w1024 info_t0">
+			<img src="images/info/logo.png" />
+		</div>
+		<div class="info18_c1">
+			<div class="tit2 f24 f_b" style="line-height: 60px;">
+				歡迎使用派寶箱<br /> 
+				請使用您的用戶名和密碼登錄系統<br />
+			</div>
+			<div class="clear"></div>
+			<div class="cen">
+				<div class="user_inputcx ma ">
+					<input type="text" mr="輸入用戶名" value="輸入用戶名"
+						onfocus="zzsz(this);if(this.value=='輸入用戶名')this.value='';"
+						id="txtUserName1" name="barCode">
+						
+					</input>
+					<img class="user_icon" src="images/login/use.png" />
+				</div>
+				<div class="user_inputcx ma ">
+					<input type="password" mr="輸入密碼" value=""
+						onfocus="zzsz(this);if(this.value=='輸入密碼')this.value='';"
+						id="txtPassword1" name="barCode">
+						
+					</input>
+					<img class="user_icon" src="images/login/pw.png" />
+				</div>
+			</div>
+			<div style="width: 320px; margin: auto;">
+				<div onclick="index5()" class="bottom fyh  l exit">
+					返 回
+				</div>
+				<div id="btnLogin" style="margin-left: 8px;" class="bottom fyh  l">
+					登錄
+				</div>
+			</div>
+		</div>
+		<!-- 快递员登陆首页界面 -->
+		<div class="info2_c1">
+			<div class="info">
+				<div class="Photo img_1">
+					&nbsp;
+					<img src="images/info/pic.png" style="vertical-align: middle;" />
+				</div>
+				<div class="fyh f_f txt">
+					<table width="551" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="107" height="35" align="right">
+								姓名：
+							</td>
+							<td width="17" align="left">
+								&nbsp;
+							</td>
+							<td width="427" align="left" id="username"></td>
+						</tr>
+						<tr>
+							<td height="35" align="right">
+								手機號碼：<br />
+							</td>
+							<td align="left">
+								&nbsp;
+							</td>
+							<td align="left" id="userphone"></td>
+						</tr>
+						<tr>
+							<td height="35" align="right">
+								帳戶餘額：
+							</td>
+							<td align="left">
+								&nbsp;
+							</td>
+							<td align="left" id="companyActMoney"></td>
+						</tr>
+						<tr>
+							<td height="40" align="left">
+								存儲狀態：
+							</td>
+							<td>
+								&nbsp;
+							</td>
+							<td id="mouthStoreStatus" align="left"></td>
+						</tr>
+						<tr>
+							<td height="40" colspan="3" align="left"><div
+									class="w_a100 thp">
+									您當前有逾期件
+									<span class="po1"></span>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;件，異常件
+									<span class="po2"></span>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;件需要優先處理
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+
+			<ul class="loginsub fgan">
+				<li>
+					<a href="#" onfocus="this.blur()" style="outline: none; text-decoration: none;">
+						<img src="images/info/s1.png" onclick="validateCompanyActMoney();" />
+					</a>
+				</li>
+				<!--<li id=express><a href="#" onfocus="this.blur()" style="outline:none;text-decoration:none;"><img src="images/info/s2.png"  onclick="geturl('取寄件.html');" /></a></li>-->
+				<li id="overtime">
+					<a href="#" onfocus="this.blur()" style="outline: none; text-decoration: none;">
+						<img src="images/info/s3.png" onclick="getover()" />
+					</a>
+				</li>
+				<!--<li id=exception><a href="#" onfocus="this.blur()" style="outline:none;text-decoration:none;"><img src="images/info/s4.png" onclick="geturl('取异常件.html');"/></a></li>-->
+				<li style="margin-right: 0;">
+					<a href="#" onfocus="this.blur()" style="outline: none; text-decoration: none;">
+						<img src="images/info/s5.png" onclick="index4()" class = "exit"/>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+		<!-- 存储快件 -->
+		<div class="info6_c1">
+			<form action="index.php" id="form1" method="post">
+				<div class="tit fyh f20 f_f img_2 t_l" id="baseinfo">
+					姓名：&nbsp;&nbsp;&nbsp;&nbsp; 當前可用余額&nbsp;&nbsp;
+					<span></span>
+				</div>
+				<div class="content">
+					<div class="left">
+						<div class="inputcx img_2 input_2">
+							<input id="barcode" maxlength="25" name="" type="text"
+								onfocus="zzsz(this);if(this.value=='請掃描包裹定單號')this.value='';"
+								value="請掃描包裹定單號" mr="請掃描包裹定單號" />
+							&nbsp;
+							<img src="images/info/inputxx.png" class="cur" />
+							&nbsp;&nbsp;
+						</div>
+						<div class="inputcx img_2 input_2" id="div_phone">
+							<input id="phone" maxlength="20" name="" type="text"
+								onfocus="zzsz(this);test2();if(this.value=='請輸入收件人手機號碼')this.value='';"
+								value="請輸入收件人手機號碼" mr="請輸入收件人手機號碼" />
+							&nbsp;
+							<img src="images/info/inputxx.png" class="cur" />
+							&nbsp;&nbsp;
+						</div>
+						<div class="inputcx img_2 input_2">
+							<input id="rephone" maxlength="20" name="" type="text"
+								onfocus="zzsz(this);test1();if(this.value=='請再次輸入收件人手機號碼')this.value='';"
+								value="請再次輸入收件人手機號碼" mr="請再次輸入收件人手機號碼" />
+							&nbsp;
+							<img src="images/info/inputxx.png" class="cur" />
+							&nbsp;&nbsp;
+						</div>
+						<div class="cx_cl">
+							<table width="100%" id="tbList" height="100%" border="0"
+								align="center" cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="33%"></td>
+									<td width="33%"></td>
+									<td width="34%"></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="right">
+						<div class="r_tit fyh f20 f_b f_f t_l">您已存入的包裹信息如下：</div>
+						<div style="width: 456px; height: 225px; overflow-y: auto;">
+							<table width="456" border="0" class="tableborder" style="height: 35px;" cellspacing="0" cellpadding="0">
+								<tr class="tt f18 f_b fyh" bgcolor="#c36d23">
+									<td width="159" height="20" align="left" class="p_l15">
+										運單號
+									</td>
+									<td width="155" height="20">
+										收件人手機號
+									</td>
+									<td width="141" height="20">
+										存入格口
+									</td>
+								</tr>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div style="width: 450px; margin: 100px auto auto auto">
+					<div class="botcc l" onclick="back();">返 回</div>
+					<div class="botcc l" style="margin-left: 100px;" onclick="back();">確定</div>
+				</div>
+			</form>
+		</div>
+		<!-- 取逾期件 -->
+		<div class="info1_c1">
+			<div class="tit fyh f22">您正在取逾期件</div>
+			<div class="cen" style="height: 450px; overflow-y: auto;">
+				<form action="index.php" method="post">
+					<table width="100%" border="0" class="tableborder3" cellspacing="0"
+						cellpadding="0">
+						<tr class="tt f18 fyh">
+							<td width="22%" height="45" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">運單號</td>
+							<td width="23%" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">用戶手機號碼</td>
+							<td width="20%" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">存件時間</td>
+							<td width="12%" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">格口</td>
+							<td width="23%" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">逾期天數</td>
+						</tr>
+						<tbody>
+							<!--
+  <tr class="f20 f_f fyh img_2">
+    <td height="50" align="left" class="p_l15 che"><input name="id[]" type="checkbox" value="1" /><img src="images/info/checkbox1.png" />&nbsp;&nbsp;&nbsp;&nbsp;李三圣</td>
+    <td>13899565521</td>
+    <td>2014-04-28</td>
+    <td>22</td>
+    <td align="right" class="p_r25">3 天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" ><img src="images/info/back.png" onclick="geturl('格口打开-快递员.html')" /></a></td>
+  </tr>
+  -->
+						</tbody>
+					</table>
+				</form>
+			</div>
+			<div class="button">
+				<img src="images/info/back_1.png" id="back1" />
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="images/info/no_opt.png" class="cur" onclick="getSelectItem3();" />
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="images/info/all_back.png" class="cur" onclick="getAllItem3();" />
+			</div>
+		</div>
+
+		<!-- 退出系统 -->
+		<!-- 格口打开-c -->
+		<div class="info15_c1">
+			<div class="tit2 f40 f_b f_f">歡迎使用派寶箱</div>
+			<div class="tit4" id="divMonos">
+				<span class="f40 fyw f_b" id="gridNum"></span>&nbsp;&nbsp;&nbsp;號格口已經打開，請取走包裹，並關閉格門！
+			</div>
+
+			<div class="cen">
+				<table width="523" border="0" align="center" cellpadding="0"
+					cellspacing="0">
+					<tr>
+						<td style="line-height: 40px;">
+							<img src="images/info/jj12bg.png" />
+								<br />系統將在
+						   <span class="time3 fyw f_b ">
+						   		30
+						   </span>
+						         秒後返回
+						</td>
+						<td class="t_l">&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="bot" align="center">
+				<div class="botcc" onclick="finish()">確定</div>
+			</div>
+		</div>
+<!-- 管理员登录 -->
+<!-- 用户名密码登录页-c4 -->
+		<div class="info18_c2">
+			<div class="tit2 f24 f_b" style="line-height: 60px;">
+				歡迎使用派寶箱<br /> 請使用您的用戶名和密碼登錄系統<br />
+			</div>
+			<div class="clear"></div>
+			<div class="cen">
+				<div class="user_inputcx ma ">
+					<input type="text" mr="輸入用戶名" value="輸入用戶名"
+						onfocus="zzsz(this);if(this.value=='輸入用戶名')this.value='';"
+						id="txtUserName" name="barCode" />
+					<img class="user_icon" src="images/login/use.png" />
+				</div>
+				<div class="user_inputcx ma ">
+					<input type="password" mr="輸入密碼" value=""
+						onfocus="zzsz(this);if(this.value=='輸入密碼')this.value='';"
+						id="txtPassword" name="barCode" />
+					<img class="user_icon" src="images/login/pw.png" />
+				</div>
+			</div>
+			<div style="width: 320px; margin: auto;">
+				<div onclick="index2()" class="bottom fyh  l exit">返 回</div>
+				<div id="btnLogin0" style="margin-left: 8px;" class="bottom fyh  l">
+					登錄</div>
+			</div>
+		</div>
+		<!-- 管理员登录界面 -->
+		<div class="info3_c1">
+			<div class="info">
+				<div class="Photo img_1">
+					&nbsp;<img src="images/info/pic.png" height="140"
+						style="vertical-align: middle;" />
+				</div>
+				<div class="fyh f_f txt">
+					<table width="551" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="107" height="35" align="right">姓名：</td>
+							<td width="312" align="left" id="adminname"></td>
+							<td width="132" align="left">&nbsp;</td>
+						</tr>
+						<tr>
+							<td height="35" align="right">手機號碼：<br /></td>
+							<td align="left" id="adminphone"></td>
+							<td align="left"></td>
+						</tr>
+						<tr>
+							<td height="35" align="right">隸屬單位：</td>
+							<td align="left" id="adminunit"></td>
+							<td align="left">&nbsp;</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<ul class="loginsub">
+				<li id="ebox1" style="display: none;">
+					<img src="images/info/g1.png" onclick="sysinfo()" />
+				</li>
+				<li id="ebox2" style="display: none;">
+					<img src="images/info/g2.png" onclick="gridmanage()" />
+				</li>
+				<li id="ebox3" style="display: none;">
+					<img src="images/info/g3.png" onclick="getadmover()" />
+				</li>
+				<li id="ebox4" style="display: none; margin-right: 0px;">
+					<img src="images/info/g4.png" onclick="getexcep()" />
+				</li>
+				<li id="ebox5" style="display: none;">
+					<a href="#" onfocus="this.blur()" style="outline: none; text-decoration: none;">
+						<img onclick="getsend()" src="images/info/g7.png"/>
+					</a>
+				</li>
+				<li style="display: block;">
+					<img src="images/info/g5.png" id="index3" class = "exit"/>
+				</li>
+				<li id="ebox7" style="display: none;">
+					<img src="images/info/g6.png" onclick="projectExit();" />
+				</li>
+			</ul>
+		</div>
+		<!-- 系统信息 -->
+		<div class="info_c1">
+			<div class="tit">
+				<div class="l">運營資訊</div>
+				<div class="r">
+					<!--<span class="modify" id="01" onclick="modifyOperator()">修改 ></span>-->
+				</div>
+			</div>
+			<div class="show1 zt">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="130" height="24" align="right" valign="bottom">運營商：</td>
+						<td width="20" valign="middle">&nbsp;</td>
+						<td align="left" valign="bottom" id="opName"></td>
+					</tr>
+					<tr>
+						<td height="22" align="right" valign="middle">運營商編號：</td>
+						<td valign="middle">&nbsp;</td>
+						<td align="left" valign="middle" id="opNo"></td>
+					</tr>
+					<tr>
+						<td height="22" align="right" valign="middle">連絡人：</td>
+						<td valign="middle">&nbsp;</td>
+						<td align="left" valign="middle" id="opContacts"></td>
+					</tr>
+					<tr>
+						<td height="22" align="right" valign="middle">聯繫電話：</td>
+						<td valign="middle">&nbsp;</td>
+						<td align="left" valign="middle" id="opConPhone"></td>
+					</tr>
+					<tr>
+						<td align="right" valign="middle">地址：</td>
+						<td valign="middle">&nbsp;</td>
+						<td align="left" valign="middle" id="opAddress"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="tit">
+				<div class="l">系統資訊</div>
+				<div class="r">
+					<span class="modify" id="02" url="index.php"></span>
+				</div>
+			</div>
+			<div class="show2 zt">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="130" height="20" align="right" valign="bottom">系統編號：</td>
+						<td width="20" valign="middle">&nbsp;</td>
+						<td align="left" valign="bottom" id="sysNo"></td>
+					</tr>
+					<tr>
+						<td height="22" align="right" valign="middle">軟體版本：</td>
+						<td valign="middle">&nbsp;</td>
+						<td align="left" valign="middle" id="sysVersion"></td>
+					</tr>
+					<tr>
+						<td height="22" align="right" valign="middle">別稱：</td>
+						<td valign="middle">&nbsp;</td>
+						<td align="left" valign="middle" id="sysAbbr">任達科技園快遞站</td>
+					</tr>
+					<tr>
+						<td height="22" align="right" valign="middle">從櫃數量：</td>
+						<td valign="middle">&nbsp;</td>
+						<td align="left" valign="middle" id="sysStoreNum"></td>
+					</tr>
+					<tr>
+						<td align="right" valign="middle">格口數量：</td>
+						<td valign="middle">&nbsp;</td>
+						<td align="left" valign="middle" id="sysMouthNum"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="tit">
+				<div class="l">格口尺寸及費用設置（單位：元）</div>
+				<div class="r">
+					<!--<span class="modify" id="03">修改 ></span>-->
+				</div>
+			</div>
+			<div class="show3 zt" style="height: 100px; overflow-y: auto;">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0"
+					id="mouthList">
+				</table>
+			</div>
+			<div onclick="toadmin()" class="botcc" style="margin: 10px auto;">確認並返回</div>
+		</div>
+		<!-- 格口管理 -->
+		<div class="info4_c1">
+			<div class="tit fyh f22 f_f img_2">
+				<div class="l">从柜设定</div>
+				<div class="r"></div>
+			</div>
+			<div id="scrollbar1">
+				<div class="scrollbar">
+					<div class="track">
+						<div class="thumb">
+							<div class="end"></div>
+						</div>
+					</div>
+				</div>
+				<div class="viewport">
+					<div class="overview"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="button">
+				<img src="images/info/back_1.png" onclick="gridto()" />
+			</div>
+		</div>
+		<!-- 取寄件 -->
+		<div class="info1_c2">
+			<div class="tit fyh f22">您正在取寄件</div>
+			<div class="cen" style="height: 450px; overflow-y: auto;">
+				<form action="index.php" method="post">
+					<table width="100%" border="0" class="tableborder2" cellspacing="0"
+						cellpadding="0">
+						<tr class="tt f18 fyh">
+							<td width="17%" height="45" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">用戶姓名</td>
+							<td width="18%" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">用戶手機號</td>
+							<td width="16%" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">寄件時間</td>
+							<td width="9%" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">格口</td>
+							<td width="17%" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">目的地</td>
+							<td width="23%" align="center" bgcolor="#c36d23"
+								style="border: 0; border-bottom: 1px solid #e2b692;">已付郵資（元）</td>
+						</tr>
+						<tbody>
+							<!--
+   <tr class="f20 f_f fyh img_2">
+    <td height="50" class="p_l15 che"><input name="id[]" type="checkbox" value="1" /><img src="images/info/checkbox1.png" />&nbsp;&nbsp;&nbsp;&nbsp;李三圣</td>
+    <td>13899565521</td>
+    <td>2014-04-28</td>
+    <td>22</td>
+    <td align="center">深圳</td>
+    <td align="center">12</td>
+  </tr>-->
+						</tbody>
+					</table>
+				</form>
+			</div>
+			<div class="button">
+				<img src="images/info/back_1.png" id="back3" />&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="images/info/no_opt.png" class="cur"
+					onclick="getSelectItem2();" /> &nbsp;&nbsp;&nbsp;&nbsp;<img
+					src="images/info/all_back.png" class="cur" onclick="getAllItem2();" />
+			</div>
+		</div>
+		<!-- 取逾期件 -->
+		<!-- 取异常件 -->
+		<div class="info1_c3">
+			<div class="tit fyh f22">您正在取異常件</div>
+			<div class="cen" style="height: 450px; overflow-y: auto;">
+				<table width="100%" border="0" class="tableborder4" cellspacing="0"
+					cellpadding="0">
+					<tr class="tt f18 fyh">
+						<td width="22%" height="45" align="center" bgcolor="#c36d23"
+							style="border: 0; border-bottom: 1px solid #e2b692;">運單號</td>
+						<td width="21%" align="center" bgcolor="#c36d23"
+							style="border: 0; border-bottom: 1px solid #e2b692;">用戶手機號碼</td>
+						<td width="18%" align="center" bgcolor="#c36d23"
+							style="border: 0; border-bottom: 1px solid #e2b692;">存件時間</td>
+						<td width="9%" align="center" bgcolor="#c36d23"
+							style="border: 0; border-bottom: 1px solid #e2b692;">格口</td>
+						<td width="30%" align="center" bgcolor="#c36d23"
+							style="border: 0; border-bottom: 1px solid #e2b692;">異常原因</td>
+					</tr>
+					<tbody>
+						<!--<tr class="f20 f_f fyh img_2">
+    <td height="70" align="left" class="p_l15 che"><input name="id[]" type="checkbox" value="1" /><img src="images/info/checkbox1.png" />&nbsp;&nbsp;&nbsp;&nbsp;李三圣</td>
+    <td>13899565521</td>
+    <td>2014-04-28</td>
+    <td>22</td>
+    <td align="right" class="p_r25">包裹破损&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/info/back.png" onclick="geturl('格口打开-快递员.html')" /></a></td>
+  </tr>-->
+					</tbody>
+				</table>
+			</div>
+			<div class="button">
+				<img src="images/info/back_1.png" id="back2" />&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="images/info/no_opt.png" class="cur"
+					onclick="getSelectItem4();" />&nbsp;&nbsp;&nbsp;&nbsp; <img
+					src="images/info/all_back.png" class="cur" onclick="getAllItem4();" />
+			</div>
+		</div>
+		<!-- 取件登录界面 -->
+		<!-- 取件 -->
+		<div class="info8_c1">
+			<div class="fyh f20 f_f t_c tit">请输入验证码或扫描二维码提取您的包裹</div>
+			<div class="ma mt25" style="width: 400px;">
+				<div class="input3 img_2">
+					&nbsp;&nbsp;<input name=""
+						onfocus="zzsz(this);if(this.value=='请输入手机号码')this.value='';"
+						type="text" value="请输入手机号码" id="txt_tel" mr="请输入手机号码" />&nbsp;&nbsp;<img
+						src="images/info/inputxx.png" class="cur" />&nbsp;&nbsp;
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="ma mt20" style="width: 400px;">
+				<div class="input3 img_2">
+					&nbsp;&nbsp;<input name=""
+						onfocus="zzsz(this);if(this.value=='请输入验证码')this.value='';"
+						type="text" id="txt_yzmm" value="请输入验证码" mr="请输入验证码" />&nbsp;&nbsp;<img
+						src="images/info/inputxx.png" class="cur" />&nbsp;&nbsp;
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="ma mt20" style="width: 400px;">
+				<div class="img_2">
+
+					<div id="openSannerPort" class="bottomlong fyh  l"
+						style="width: 400px;">扫描二维码取件</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div style="width: 320px; margin: auto; margin-top: 30px;">
+				<div onclick="geturl('index.html');" class="bottom fyh  l">返 回</div>
+				<div id="btnOk1" style="margin-left: 8px;" class="bottom fyh  l">
+					确定</div>
+			</div>
+		</div>
+		<div class="text1">
+			<input type="text" class="txta txt1" id="1" disabled="disabled"/> 
+			<input type="text" class="txta" id="2" disabled="disabled"/> 
+			<input type="text" class="txta" id="3" disabled="disabled"/> 
+			<input type="text" class="txta" id="4" disabled="disabled"/> 
+			<input type="text" class="txta" id="5" disabled="disabled"/> 
+			<input type="text" class="txta" id="6" disabled="disabled"/> 
+			<input type="text" id="txt_yzmm" disabled="disabled"/>
+		</div>
+		<div class="keyboard1">
+			<div class="rowone">
+				<span class="key" id="key1">1</span> <span class="key" id="key2">2</span>
+				<span class="key" id="key3">3</span> <span class="key" id="key4">4</span>
+				<span class="key" id="key5">5</span> <span class="key" id="key6">6</span>
+				<span class="key" id="key7">7</span> <span class="key" id="key8">8</span>
+				<span class="key" id="key9">9</span> <span class="key" id="key10">0</span>
+				<span class="key" id="key">-</span>
+			</div>
+			<div class="rowtwo">
+				<span class="key" id="key11">Q</span> <span class="key" id="key12">W</span>
+				<span class="key" id="key13">E</span> <span class="key" id="key14">R</span>
+				<span class="key" id="key15">T</span> <span class="key" id="key16">Y</span>
+				<span class="key" id="key17">U</span> <span class="key" id="key18">I</span>
+				<span class="key" id="key19">O</span> <span class="key" id="key20">P</span>
+			</div>
+			<div class="rowthree">
+				<span class="key" id="key21">A</span> <span class="key" id="key22">S</span>
+				<span class="key" id="key23">D</span> <span class="key" id="key24">F</span>
+				<span class="key" id="key25">G</span> <span class="key" id="key26">H</span>
+				<span class="key" id="key27">J</span> <span class="key" id="key28">K</span>
+				<span class="key" id="key29">L</span>
+			</div>
+			<div class="rowfour">
+				<span class="key" id="del">删除</span> <span class="key" id="key30">Z</span>
+				<span class="key" id="key31">X</span> <span class="key" id="key32">C</span>
+				<span class="key" id="key33">V</span> <span class="key" id="key34">B</span>
+				<span class="key" id="key35">N</span> <span class="key" id="key36">M</span>
+				<span class="key" id="enter">确定</span>
+			</div>
+		</div>
+		<!-- 取件格口打开 -->
+		<div class="info15_c2" id = "mouthOpen">
+			<div id = "mouthEbox">
+				請於 
+				<span id="door" class="fyw f_b">1412</span>
+				號箱門領取妳的物件
+			</div>
+			<div style = "font-size:30px">
+				(如有領取問題，請致電3669 6320查詢)
+			</div>
+			<div id = "box"> <!-- # 居中 子元素上下左右保持一定的间隔 -->
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span id = "spanLy"></span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+		</div>
+			<div>
+					<div  id="btnOk">
+						<img src="images/gree.jpg" />
+					</div>
+			</div>
+			<div style = "font-size:20px">
+				（系統將於 
+				<span class="time">30</span>
+				秒後自動確認）
+				
+			</div>
+		</div>
+		<!-- validfalse -->
+		<div class="ll1">
+			<div class="buttonPos" id="btnOk2">
+				<img src="images/back.jpg" />
+			</div>
+		</div>
+		<!-- success -->
+		<div class="ll2">
+			<div class="buttonPos" id="btnOk2a">
+				<img src="images/more.jpg" />
+			</div>
+			<!--
+			<font size="6">（系統將於 <span class="time fyw f_b ">30</span>
+					秒後自動確認）
+			</font>
+			-->
+		</div>
+
+		<div class="clear"></div>
+	</div>
+	<div class="w1024 info_f fyh" id="fotwe" style="background: url(images/di.jpg) no-repeat;" >
+		
+	</div>
+	<input type="hidden" id="testphone" />
+	<script type="text/javascript" src="m.js"></script>
+</body>
+</html>

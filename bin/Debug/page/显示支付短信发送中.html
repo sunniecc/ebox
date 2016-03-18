@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+
+</head>
+<body>
+<div style="background:url(images/info/allbg.jpg) no-repeat; position:relative;">
+<div style="font-size:20px; color:#fff; line-height:30px; font-family:'微软雅黑';" >
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="64" style=" background:url(images/info/eb.png) no-repeat 250px  10px;"><div class=" f20 t_l" style="margin-left:250px;">支付短信已经发送至您的个人<br />手机，请通过手机完成支付</div></td>
+  </tr>
+  <tr>
+    <td height="58" class="t f18">正在发送......</td>
+  </tr>
+  <tr>
+    <td class="f18 t_l t"><div style="padding:15px; "><span class="f_f f_b">温馨提示：</span><br />
+     支付过程中，等充值成功后点击【交易完成】按钮进入下一步，若您充值未成功点击【交易完成】时，系统扔在该页面等待，或请使用<span class="tt f_b">［深圳通支付］</span></div></td>
+  </tr>
+  <tr>
+    <td>
+	<div class="botcc l" onclick="window.close();">交易取消</div>
+	<div class="botcc r" onclick="submit()" id="confirm">交易完成<span class="time fyw f_b">10</span></div>
+	</td>
+   </tr>
+</table>
+   </div>
+   </div> 
+</body>
+<script type="text/javascript">
+//ebox.SetBizCode('EBOX2046');
+var t = null;
+$(function(){
+	t = setInterval("timeget()",1000);
+	$("#confirm").attr("disabled","disabled");
+	var gn = parseInt(Math.random()*100+1);
+	$("#gridNum").html(gn);
+  });
+function timeget(){
+	timetxt=$(".time").text();
+	if(timetxt==0){
+		$("#confirm").removeAttr("disabled");
+		clearInterval(t);
+		return false;
+	}
+	timetxt--
+	$(".time").text(timetxt);
+}
+function submit(){
+	var r = json(ebox.validateMoney());
+	if(r.success){
+		window.returnValue=1;
+		window.close();
+	}else{
+		ms('系統提示', '充值金额还未到账，请稍候再试');
+	}
+}
+</script>
+</html>

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+
+</head>
+<body>
+<div class="w1024 info_all">
+  <div class="w1024 info_t"> <img src="images/info/logo.png"/> </div>
+  <input type="hidden" id="mouthArkId" />
+  <div class="info7_c f22 f_b">
+    <table class="gksearch f_b fyh" width="100%" border="0">
+      <tr align="center">
+        <td colspan="2">格口类型</td><td colspan="2">格口价格</td>
+      </tr>
+      <tr>
+        <td width="104"><div class="l  ml15">箱门类型</div></td>
+        <td width="228" align="center"><div class="l ml15">
+            L
+          </div></td>
+        <td width="278" align="center" class="input2 l ml15">
+		<input type="hidden" name="moId" value="2"/>
+		<input type="text" name="price" value="2.0"/></td>
+      </tr>
+    </table>
+    <div class="info7_c" style="padding-left:320px; " >
+      <div class="l p_l15"><img src="images/info/enter.png"  onclick="submit();"/> </div>
+    </div>
+  </div>
+  <div class="w1024 info_f fyh"> pakpobox v1.0 </div>
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	$(".express").hide();
+	ebox.SetBizCode('EBOX2045');
+	var v = json(ebox.loadMouthArkInfo());
+	if(null != v){
+		
+	}
+});
+function submit(){
+	var list = getPageInfo();
+	if('-1' == list){
+		return;
+	}
+	ebox.updateMouthPrice(list);
+	window.returnValue=1;
+	window.close();
+}
+function getPageInfo(){
+	var list = '-1';
+	$(".gksearch").find("tr").each(function(){
+		var id = $(this).find("input[type=hidden]").val();
+		var unitprice = $(this).find("input[type=text]").val();
+		if(null == unitprice || ''==$.trim(unitprice)){
+			ms('系統提示', '请输入格口费用');
+			return '-1';
+		}
+		list +='{"moPrice":'+unitprice+',"moId":'+id+'},';
+	});
+	if('-1'==list){
+		return "-1";
+	}
+	list = '['+list.substring(0,list.length-1)+']';
+	return list;
+}
+</script>
+</html>

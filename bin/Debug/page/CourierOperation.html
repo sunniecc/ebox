@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+<script type="text/javascript" src="js/delay.js"></script>
+</head>
+<body>
+
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info2_c">
+		<div class="info">
+       	  <div class="Photo img_1">&nbsp;<img src="images/info/pic.png" style="vertical-align:middle;"/></div>
+            <div class="fyh f_f txt"> <table width="551" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="107" height="35" align="right">姓名：</td>
+    <td width="17" align="left">&nbsp;</td>
+    <td width="427" align="left" id="username"></td>
+  </tr>
+  <tr>
+    <td height="35" align="right">手机号码：<br /></td>
+    <td align="left">&nbsp;</td>
+    <td align="left" id="userphone"></td>
+  </tr>
+  <tr>
+    <td height="35" align="right">账户余额：</td>
+    <td align="left">&nbsp;</td>
+    <td align="left" id="companyActMoney"></td>
+  </tr>
+  <tr>
+    <td height="40" align="left">存储状态：</td>
+    <td>&nbsp;</td>
+    <td id="mouthStoreStatus" align="left"></td>
+  </tr>
+  <tr>
+    <td height="40" colspan="3" align="left"><div class="w_a100 thp">您当前有逾期件<span class="po1"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;件，异常件<span class="po2"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;件  需要优先处理</div></td>
+    </tr>
+</table>
+</div>
+        </div>
+        
+        
+<ul class="loginsub fgan">
+	<li><a href="#" onfocus="this.blur()" style="outline:none;text-decoration:none;"><img src="images/info/s1.png" onclick="validateCompanyActMoney();"/></a></li>
+    <li id=express><a href="#" onfocus="this.blur()" style="outline:none;text-decoration:none;"><img src="images/info/s2.png"  onclick="geturl('取寄件.html');" /></a></li>
+    <li id=overtime><a href="#" onfocus="this.blur()" style="outline:none;text-decoration:none;"><img src="images/info/s3.png"onclick="geturl('取逾期件.html');" /></a></li>
+    <li id=exception><a href="#" onfocus="this.blur()" style="outline:none;text-decoration:none;"><img src="images/info/s4.png" onclick="geturl('取异常件.html');"/></a></li>
+    <li style="margin-right:0;"><a href="#" onfocus="this.blur()" style="outline:none;text-decoration:none;"><img src="images/info/s5.png" onclick="geturl('index.html');"  /></a></li>
+</ul>
+	
+  </div>
+  <div class="clear"></div>
+    
+</div>
+</body>
+<script type="text/javascript">
+ebox.SetBizCode('EBOX2019');
+var uaCompanyActMoney = 0;
+
+$(function(){
+	ebox.startCheckDoor();
+	$(this).doTimeout('EBOX2019', 150, function() {
+		loadCoureInfo();
+	});
+	$(window).unload(function(){
+		ebox.stopCheckDoor();
+	});
+});
+function loadCoureInfo(){
+	var v = json(ebox.GetUiData()).UserInfo;
+	if(null == v || undefined == v.userInfo || null == v.userInfo){
+		alert('快递员未授权，请联系运营商');
+		geturl('index.html');
+	}
+	var cnt = json(ebox.openStoreExpress());
+	$("#username").html(v.userInfo.uiUserName);
+	$("#userphone").html(v.userInfo.uiUserPhone);
+	if(v.userAccount == null || '' == v.userAccount){
+		$("#companyActMoney").html('0元');
+	}else{
+		uaCompanyActMoney = v.userAccount.uaCompanyActMoney;
+		$("#companyActMoney").html(v.userAccount.uaCompanyActMoney+"元");
+	}
+	if(cnt.custExpress >= 0){
+		$("#express").append("<span>"+cnt.custExpress+"</span>");
+	}
+	if(cnt.overtimeExpress >= 0){
+		$(".po1").html(cnt.overtimeExpress);
+		$("#overtime").append("<span>"+cnt.overtimeExpress+"</span>");
+	}
+	if(cnt.exceptionExpress >= 0){
+		$(".po2").html(cnt.exceptionExpress);
+		$("#exception").append("<span>"+cnt.exceptionExpress+"</span>");
+	}
+	if(parseFloat(cnt.data) >0){
+		$("#mouthStoreStatus").html("格口还剩"+cnt.data+"个");
+	}else{
+		$("#mouthStoreStatus").html("格口用完了");
+	}
+}
+function validateCompanyActMoney(){
+	if(uaCompanyActMoney <= 0){
+		ms('系統提示','快遞員帳戶為0元，不允許存件');
+	}else{
+		if(validateStoreStatus()){
+			geturl('存储包裹-c1.html');
+		}
+	}
+}
+function validateStoreStatus(){
+	var rst = ebox.validateBoxDoorStatus();
+	if('' == rst){
+		return true;
+	}else{
+		ms('系統提示','第【'+rst+'】號門未關，請先關閉');
+		return false;
+	}
+}
+</script>
+</html>

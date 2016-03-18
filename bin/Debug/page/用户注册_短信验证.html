@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+<script type="text/javascript" src="vk_loader.js?vk_layout=CN%20Chinese%20Simpl.%20Pinyin&vk_skin=flat_gray" ></script>
+
+</head>
+<body>
+
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info8_c">
+	<div class="fyh f20 f_f t_l tit">请输入您的手机号码，点确定获取注册验证码</div>
+    <div class="w_a100">
+<div class="l input3 img_2">&nbsp;&nbsp;<div id="softkey" class="abs"></div><input name="" type="text" id="txt_tel" mr="請輸入手機號码"  onfocus="zzsz(this);"/>&nbsp;&nbsp;<img src="images/info/inputxx.png" class="cur delin" /></div>   <div class="bottom3 cur j_bot1  ml25" pd='y' id="butel">确  定<span>(<b>60</b>)</span></div> </div>
+<div class="clear"></div>
+<div class="fyh f20 f_f t_l tit mt20">请输入您收到的验证码完成注册，并继续寄件流程</div>
+ <div class="w_a100">
+<div class="l input3 img_2">&nbsp;&nbsp;<div id="softkey1" class="abs"></div><input name="" type="text"   id="txt_yzm" mr="請輸入驗證碼" onfocus="zzsz(this);" />&nbsp;&nbsp;<img src="images/info/inputxx.png" class="cur delin" /></div>   <div class="bottom3 cur j_bot2 ml25" pd='y'>确  定</span></div> </div>
+<div class="button"><img src="images/info/back_1.png" onclick="geturl('index.html');"/></div> 
+ </div>
+    <div class="w1024 info_f fyh">
+		pakpobox v1.0
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+$("#txt_tel").focus(function(){
+				$('embed').remove();  
+                $('body').append('<embed src="mp3/请输入您的手机号码，并点击右侧按钮，系统将向您发送注册验证码.mp3" autostart="true" hidden="true" loop="false">');
+			});
+$("#butel").focus(function(){
+				$('embed').remove();  
+                $('body').append('<embed src="mp3/请稍后.mp3" autostart="true" hidden="true" loop="false">');
+			});
+$("#txt_yzm").focus(function(){
+				$('embed').remove();  
+                $('body').append('<embed src="mp3/请输入您的注册验证码，并点击右侧确定按钮.mp3" autostart="true" hidden="true" loop="false">');
+			});
+ebox.SetBizCode('EBOX2047');
+var ttxh='';
+$(function(){
+		$(".delin").click(function(){
+		mr=$(this).parent().find('input').attr('mr');
+			$(this).parent().find('input').val(mr);
+		})
+	$(".j_bot1").click(function(){
+		var tel = $(this).parent().find('input').val();
+		if(/^\d+$/.test(tel))
+        {
+			}else{
+			ms('信息提示','手机号码不正确！');return false;
+			}
+		if($(this).attr("pd")=='y'){
+			var r = json(ebox.registrationVerify(tel));
+			if(!r.success)
+			{
+			//手机号码已注册
+				ms('信息提示',r.msg);
+				return ;
+			}
+			var msg1="ok";
+			//$.ajax({
+//type:'get',url:'index.php',cache:false,data:{tel:tel},dataType:'html',success:function(msg1){
+	if(msg1=='ok'){
+		$('embed').remove();  
+                $('body').append('<embed src="mp3/系统已经向您发送临时密码，请用您的手机号码和临时密码登录.mp3" autostart="true" hidden="true" loop="false">');
+		ms('信息提示','验证码已经发送到您手机，请留意短信！');
+		$(".j_bot1").removeClass('cur');
+		$(".j_bot1").attr("pd",'n');
+		$(".j_bot1").parent().find('input').attr("disabled",true);	
+			$(".j_bot1").parent().find('img').hide();
+			ttxh=setInterval("timeouts()",1000);
+		}else{
+			ms('信息提示','发送失败!');
+			return false;
+			}
+//},error:function(){
+//ms('信息提示','发送失败，请联系管理员');
+//return false;
+//}});
+			}
+		})
+		
+		$(".j_bot2").click(function(){
+			var tel = $(".j_bot1").parent().find('input').val();
+			var yzm=$(this).parent().find('input').val();
+			var r = json(ebox.userRegist(tel,yzm));
+			//$.ajax({
+	//type:'get',url:'index.php',cache:false,data:{yzm:yzm},dataType:'html',success:function(msg){
+	if(r.success){
+			/**
+			if(r.method==1)
+				window.location.href="完善寄件信息.html"; 
+			else 
+				window.location.href="会员中心.html"; 
+			*/
+			window.location.href="用户名密码登录页-c2.html";
+		}else{
+			ms('信息提示','验证失败！');
+			}
+	//},error:function(){
+	//ms('信息提示','验证失败！');
+	//}});
+		})
+		
+})
+function timeouts(){
+timetxt=$(".bottom3 b").text();
+
+if(timetxt==0){
+$(".j_bot1").addClass('cur');
+$(".j_bot1 b").text(60);
+$(".j_bot1").attr('pd','y');
+$(".j_bot1").parent().find('input').attr("disabled",false);
+$(".j_bot1").parent().find('img').show();
+clearInterval(ttxh);
+	return false;
+	}
+timetxt--
+$(".bottom3 b").text(timetxt);
+}
+</script>
+</html>

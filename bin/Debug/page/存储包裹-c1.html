@@ -1,0 +1,691 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+	
+	<title>派宝箱</title>
+	<link href="css.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/web.js"></script>
+	<script type="text/javascript" src="js/delay.js"></script>
+	<link href="js/swf.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+ .payMoneyReason {
+	width: 322px;
+	height: 55px;
+	
+	margin-bottom: 17px;
+}
+</style>
+<body>
+<div class="w1024 info_all">
+  <div class="w1024 info_t"> <img src="images/info/logo.png"/> </div>
+  <div class="info6_c" style=" margin-top:-25px">
+    <form action="index.php" id="form1" method="post">
+      <div class="tit fyh f20 f_f img_2 t_l" id="baseinfo"> 姓名：&nbsp;&nbsp;&nbsp;&nbsp;
+        当前可用余额&nbsp;&nbsp; <span></span> </div>
+      <div class="content">
+        <div class="left">
+          <div class="inputcx img_2 input_2"> 
+            <input id="barcode" maxlength="25" name="Input" type="text" onfocus="zzsz(this);if(this.value=='请扫描包裹定单号')this.value='';" value="请扫描包裹定单号"  mr="请扫描包裹定单号" />
+            &nbsp; <img src="images/info/inputxx.png" class="cur" /> &nbsp;&nbsp; </div>
+          <div class="inputcx img_2 input_2" id="div_phone">
+            <input id="phone" maxlength="20" name="Input2" type="text" onfocus="zzsz(this);test2();if(this.value=='请输入收件人手机号码')this.value='';" value="请输入收件人手机号码" mr="请输入收件人手机号码" />
+            &nbsp; <img src="images/info/inputxx.png" class="cur" /> &nbsp;&nbsp; </div>
+          <div class="inputcx img_2 input_2">
+            <input id="rephone" maxlength="20" name="Input2" type="text" onfocus="zzsz(this);test1();if(this.value=='请再次输入收件人手机号码')this.value='';" value="请再次输入收件人手机号码" mr="请再次输入收件人手机号码" />
+            &nbsp; <img src="images/info/inputxx.png" class="cur" /> &nbsp;&nbsp; </div >
+          <div class="payMoneyReason" align="left">
+            <div style="width:90px; margin-top:10px; float:left" >
+              <select name="select" id="selectThing" style="width:150px;font-size:25px">
+                <option value="0">--请选择--</option>
+                <option value="1" >超重</option>
+                <option value="2">修理</option>
+                <option value="3">有冷气</option>
+                <option value="4">干洗服务</option>
+                <option value="5">其他情况</option>
+              </select>
+            </div>
+            <div style="float:left;margin-left:15px;margin-top:12px;">
+              <input name="text" type="text" id="paymoney" style="font-size:25px; height:25px; width:140px;margin-left:40px; " onfocus="zzsz(this);if(this.value=='支付的金额')this.value='';" value="支付的金额"/>
+            </div>
+          </div>
+         
+          <div class="cx_cl" style="margin-top:-10px">
+            <table width="100%" id="tbList" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="33%"></td>
+                <td width="33%"></td>
+                <td width="34%"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="right">
+          <div class="r_tit fyh f20 f_b f_f t_l">您已存入的包裹信息如下：</div>
+          <div style="width:456px; height:225px; overflow-y:auto;">
+            <table width="456" border="0" class="tableborder" style="height:35px;" cellspacing="0" cellpadding="0">
+              <tr class="tt f18 f_b fyh" bgcolor="#c36d23">
+                <td width="159" height=20 align="left" class="p_l15">运单号</td>
+                <td width="155" height=20>收件人手机号</td>
+                <td width="141" height=20>存入格口</td>
+              </tr>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div style="width:450px; margin:50px auto auto auto">
+        <div class="botcc l" onclick="back();">返 回</div>
+        <div  class="botcc l" style="margin-left:100px;" onclick="back();">确定</div>
+      </div>
+    </form>
+  </div>
+  <div class="clear"></div>
+</div>
+<input type="hidden" id="testphone" ></body>
+	<script type="text/javascript">
+
+$(function(){
+	$('#barcode').focus();
+	$(".inputcx img").click(function(){
+		mr=$(this).parent().find('input').attr('mr');
+		$("#testphone").val('');
+		$(this).parent().find('input').val(mr);
+	});
+	ebox.InitBarCodeScannerToRead();
+	$("#barcode").focus(function(){
+		ebox.InitBarCodeScannerToRead();
+		chg = false;
+	});
+	$('#barcode').bind("blur",function(){
+		if($.trim($(this).val()) != ''){
+			onzzszClosed(this);
+		}
+	});
+	$('#barcode').bind("change",function(){
+		chg = false;
+	});
+	/**
+	$(".texthidden").bind("focus",function(){
+		$(this).removeAttr("style");
+	});
+	$("#barcode").bind("focus",function(){
+		$(".texthidden").attr("style","color: #EEEEEE;");
+	});
+	$("#rephone").bind("focus",function(){
+		$(".texthidden").attr("style","color: #EEEEEE;");
+	});*/
+});
+//扫描枪检索到的运单号
+function OnCodeScan(code)
+{
+	$('#barcode').val(code);
+	closediv1('xnszjp');
+	onzzszClosed($('#barcode'));
+}
+function postfo(){
+	$("#form1").submit();
+}
+function alerta(bs,no){
+	var htmls = '';
+	switch(bs){
+	case 1:	
+htmls='<div class="vipxz" style="background:none;"><div class="f20 img_2 t_l" style="background:none; width:350px; height:150px; line-height:60px;"><div class="t_c">请输入到付金额</div><div class="input7  mt10 l"><input  id="div_expressMoney" onfocus="zzsz(this);" name=""  style="outline:none;text-decoration:none;"></div><div class="bottom l" onclick="submitStoreExpress(\'post\');">确定</div></div></div>';
+		break;
+		case 2:
+htmls='<div class="vipxz" style="background:none;"><div class="f20 img_2 t_l" style="background:none; width:350px; height:150px;padding-top:50px;line-height:60px;"><div class="bottom l" onclick="alerta(1);"  style="outline:none;text-decoration:none;">到付件</div><div class="bottom l" onclick="submitStoreExpress(\'post\');">正常件</div></div></div>';
+		break;
+		case 3:	
+htmls='<div align="center" class="vipxz" style="background:none;"><div align="center" class="f20 img_2 t_l" style="background:none; width:450px; height:210px; line-height:60px;"><div class="t_c"><h1 style="font-size:70px;color:#e98127;">'+no+'</h1>号箱门已打开，投入包裹后请关闭箱门！<p>系统将在 <span class="time fyw f_b ">30</span> 秒后返回</p></div><div align="center" class="l"><input style="padding-left:60px;" align="left" style="outline:none;text-decoration:none;" name="" type="image" src="images/post/sub.png" onclick="submitStoreExpress(\'post\')"/></div><div class="bottom l" onclick="closediv(\'post\')">取消</div></div></div>';
+		break;
+		case 4:	
+htmls='<div align="center" class="vipxz" style="background:none;"><div align="center" class="f20 img_2 t_l" style="background:none; width:450px; height:150px; line-height:60px;"><div align="center" class="t_c">是否黑名单？</div><div align="center"><div class="bottom l"  style="outline:none;text-decoration:none;" onclick="closediv(\'post\'); ms(\'温馨提示\',\'该包裹请当面派送！\');">是</div><div class="bottom r" onclick="closediv(\'post\');alerta(2);">否</div></div></div></div>';
+		break;
+	}
+	ac = new $.pos({
+		title: "&nbsp;",
+		width:700,height:200,center:true,top:20,left:30,//center：true 左右上下居中、false自定义top,left。
+		url:'',
+		form:htmls
+		});
+	ac.subdiy2();
+}
+ebox.SetBizCode('EBOX2020');
+$(function () { 
+	setInterval("timeget()", 1000);
+});
+function timeget() {
+    timetxt = $(".time").text();
+    timetxt--;
+    if (timetxt == 0) {
+        submitStoreExpress('post');
+        return false;
+    }
+    $(".time").text(timetxt);
+};
+$(function(){
+	ebox.StartCamera();
+	t = setInterval(function() { 
+	timeget1();
+	}, 1000);
+});
+var timetxt = 0;
+function timeget1(){
+	timetxt++;
+	if(timetxt==4){
+		clearInterval(t);
+		ebox.CloseCamera();
+		return false;
+	}
+	
+	ebox.Snapshot();
+}
+
+var chg = false;
+function onzzszClosed(src)
+{
+	var value = $(src).val();
+	if($(src).attr('id')!= 'barcode' || $.trim(value)=='' || '请扫描包裹定单号'==value){
+		return ;
+	}
+	if(chg){
+		return;
+	}
+	var r = ebox.CheckOrderByBarCode($(src).val());
+	if(r)
+	{
+		chg = true;
+		if('-4' == r){
+			ms('系統提示','运单号已经使用，请重新输入');
+			$("#barcode").val('');
+			return;
+		}
+		if(parseFloat(r) > 0){
+			$("#phone").val(r);
+			$("#testphone").val(r);
+			$("#rephone").val(r);
+			var rst = json(ebox.queryTimeAndForbidden(r,value));
+			if('-2' == rst){
+				//alert('当前手机客户为黑名单，请线下投递');
+				//clearExpressInfo();
+				//return;
+			}
+			if('-3' == rst){
+				alert('客户设置了禁投，请线下投递');
+				clearExpressInfo();
+				return;
+			}
+		}
+	}
+}
+function setLoginInfo(name,money){
+	$("#baseinfo").html('');
+	$("#baseinfo").html('姓名: '+name+'&nbsp;当前可用余额：<span>&nbsp;'+parseFloat(money).toFixed(2)+'元</span>');
+}
+var uaCompanyActMoney = 0;
+var loginName = '';
+$(function() {
+	$(this).doTimeout('EBOX2020', lazyTime, function() {
+		loadStoreExpressInfo();
+	});
+});
+function loadStoreExpressInfo(){	
+	//var cnt = json(ebox.openStoreExpress()).normalCount[0];
+	var userinfo = json(ebox.GetUiData()).UserInfo;
+	var money = '';
+	if(null != userinfo.userAccount && '' !=userinfo.userAccount){
+		money = userinfo.userAccount.uaCompanyActMoney;
+		uaCompanyActMoney = money;
+	}
+	loadMouthList();
+	loginName=userinfo.userInfo.uiUserName;
+	setLoginInfo(loginName,money);
+	$('#tbList td').click(function(){
+		timeout = 0;
+		if(typeof($(this).attr('moTypeId'))!='undefined'){
+			var txt = $(this).find("span").text();
+			if(txt == '0'){
+				return;
+			}
+			validateBarCode($(this).attr('moTypeId'));
+			return;
+		}
+	});
+}
+
+function test1(){
+	var phone = $("#phone").val();
+	if($.trim(phone) == '' || '请输入收件人手机号码'==phone){
+		$("#phone").val("");
+		return;
+	}
+	if('***********' != phone){
+		$("#testphone").val(phone);
+	}
+	$("#phone").val("***********");
+}
+
+function test2(){
+	var testphone = $.trim($("#testphone").val());
+	if(testphone != ''){
+		$("#phone").val(testphone);
+	}
+	
+}
+function loadMouthList()
+{
+	//加载格口类型列表
+	var m = ebox.GetFreeMouthList();
+	var list= json(m);
+	$('#tbList td').html('&nbsp;');
+	var map = new Map("mouthArk1");
+	for(var i =0;i<list.length;i++){
+		if(list[i].status == '1'){
+			var value = map.get(list[i].momodel);
+			if(value == ""){
+				map.put(list[i].momodel,list[i].count+"");
+			}else{
+				map.put(list[i].momodel,(parseFloat(value)+parseFloat(list[i].count))+"");
+			}
+		}
+	}
+	//map.showMap();
+	var tmp = [];
+	for(var i=0;i<list.length;i++)
+	{
+		var ex = true;
+		for(var j=0;j<tmp.length;j++){
+			if(list[i].momodel == tmp[j]){
+				ex = false;
+				break;
+			}
+		}
+		if(ex){
+			tmp.push(list[i].momodel);
+		}
+	}
+	for(var i=0;i<tmp.length;i++)
+	{
+		var val = map.get(tmp[i]);
+		if('' != val && '-1' != val){
+			var td=  $('#tbList td:eq('+i+')');
+			if(tmp[i]=="MINI-S")
+s="迷你";
+else if(tmp[i]=="S")
+s="小";
+else if(tmp[i]=="M")
+s="中";
+else if(tmp[i]=="L")
+s="大";
+else if(tmp[i]=="XL")
+s="加大";
+else if(tmp[i]=="XXL")
+s="超大";
+			td.html(s+"┃<span>"+map.get(tmp[i])+"</span>");
+			td.attr('moTypeId',getTypeId(list,tmp[i]));
+		}else{
+			
+			var td=  $('#tbList td:eq('+i+')');
+
+if(tmp[i]=="MINI-S")
+tmp[i]="迷你";
+else if(tmp[i]=="S")
+tmp[i]="小";
+else if(tmp[i]=="M")
+tmp[i]="中";
+else if(tmp[i]=="L")
+tmp[i]="大";
+else if(tmp[i]=="XL")
+tmp[i]="加大";
+else if(tmp[i]=="XXL")
+tmp[i]="超大";
+			td.html(tmp[i]+"┃<span>"+0+"</span>");
+			td.attr('moTypeId','');
+		}
+	}
+	map.clearMap();
+}
+function getTypeId(list,model){
+	for(var i=0;i<list.length;i++){
+		if(list[i].momodel == model){
+			return list[i].moTypeId
+		}
+	}
+}
+function validateBarCode(mouthTypeId){
+	var barcode = $("#barcode").val();
+	var phone = $("#testphone").val();
+	var rephone = $("#rephone").val();
+	if(null == barcode || '' == barcode || '请扫描包裹定单号'==barcode){
+		ms('系統提示','请填写快件运单号');
+		return;
+	}
+	if(null == phone || ''==phone || '请输入收件人手机号码' == phone){
+		ms('系統提示','請填寫收件人手機號');
+		return;
+	}
+	if(null == rephone || ''==rephone || '请再次输入收件人手机号码'==rephone){
+		ms('系統提示','请填写收件人确认手机号');
+		return;
+	}
+	if(phone != rephone){
+		ms('系統提示','收件人手机号与确认手机号不符，请重新填写');
+		$("#rephone").val('');
+		return;
+	}
+	var validRst = json(ebox.queryTimeAndForbidden(phone,barcode));
+	if('-2' == validRst){
+		//alert('当前手机客户为黑名单，请线下投递');
+		//clearExpressInfo();
+		//return;
+	}
+	if('-3' == validRst){
+		ms('系統提示','客户设置了禁投，请线下投递');
+		clearExpressInfo();
+		return;
+	}
+	var rst = ebox.validateBarCode(barcode,phone,mouthTypeId);
+	/**var obj = json(rst);
+	if(null == obj && obj.eiBarcode != null){
+		ms('系統提示','運單號已經錄入，不可重復使用');
+		clearExpressInfo();
+		return;
+	}*/
+	if('4' == rst){
+		ms('系統提示','格口类型被使用完，请选择其他');
+		loadMouthList();
+		return;
+	}
+	//alerta(2);
+	//submitStoreExpress('post');
+	var uidata = json(ebox.GetUiData());
+    var JiJianMouthNo =uidata.JiJianMouthNo;
+	alerta(3,JiJianMouthNo);
+}
+function showMouthNo(no){
+	alerta(3,mo);
+}
+
+
+
+//交超出的金额
+function submitStoreExpress1(){
+	var money = $("#paymoney").val();
+	if(undefined == money || '' == money){
+		money = 0;
+	}
+	
+	var r = json(ebox.saveStoreExpress(money));
+	if(r != '-2'){
+		var fee = r.mouthMoney;
+		if(fee != null && !isNaN(fee)){
+			var currFee = (parseFloat(uaCompanyActMoney)-parseFloat(fee)).toFixed(2);
+			uaCompanyActMoney = currFee
+			setLoginInfo(loginName,currFee);
+		}
+		$(".post").remove();
+		$(".allpost").remove();
+		addHisRow(r);
+		loadMouthList();
+		$("#barcode").val('');
+		$("#phone").val('');
+		$("#testphone").val('');
+		$("#rephone").val('');
+		$("#rephone").val('');
+	}else{
+		$(".post").remove();
+		$(".allpost").remove();
+		$("#barcode").val('');
+		$("#phone").val('');
+		$("#testphone").val('');
+		$("#rephone").val('');
+		//ms('系統提示','系统存件异常，请取走快件');
+	}
+}
+
+
+
+function submitStoreExpress(vid){
+		var money = $("#paymoney").val();
+		var selectThing=$("#selectThing").val();
+		//var selectEnglich=$("#selectEngilsh").val()
+	if(undefined == money || '' == money||money=='支付的金额'){
+		money = 0;
+	}
+	//alert(selectThing);
+	if(undefined == selectThing || '' == selectThing||selectThing=='--请选择--'){
+		selectThing = 0;
+	}
+	//if(undefined == selectEnglich || '' == selectEnglich||selectEnglich=='--请选择--'){
+//		selectEnglich = 0;
+//	}
+	$("." + vid).remove();
+    $(".allpost").remove();
+	//需要输入一个发送短信是要中文还是英文
+	var r = json(ebox.saveStoreExpress(money,selectThing,0));
+	if(r != '-2'){
+		var fee = r.mouthMoney;
+		if(fee != null && !isNaN(fee)){
+			var currFee = (parseFloat(uaCompanyActMoney)-parseFloat(fee)).toFixed(2);
+			uaCompanyActMoney = currFee
+			setLoginInfo(loginName,currFee);
+		}
+		$(".post").remove();
+		$(".allpost").remove();
+		addHisRow(r);
+		loadMouthList();
+		$("#barcode").val('');
+		$("#phone").val('');
+		$("#testphone").val('');
+		$("#rephone").val('');
+		$("#paymoney").val('');
+		//将下拉框变回请选择选项
+		$("#selectThing option[value='0']").attr("selected","selected");
+		
+	}else{
+		$(".post").remove();
+		$(".allpost").remove();
+		$("#barcode").val('');
+		$("#phone").val('');
+		$("#testphone").val('');
+		$("#rephone").val('');
+		$("#paymoney").val('');
+		//将下拉框变回请选择选项
+		$("#selectThing option[value='0']").attr("selected","selected");
+		ms('系統提示','系统存件异常，请取走快件');
+	}
+}
+function addHisRow(record){
+	if(null == record || undefined == record){
+		return;
+	}
+	var barcode = $("#barcode").val();
+	//var phone = $("#phone").val();
+	var table1 = $('.tableborder'); 
+	//var firstTr = table1.find('tbody>tr:first'); 
+	var row = $("<tr class='f20 f_f fyh img_2'></tr>"); 
+	var td1 = $("<td>"+record.barcode+"</td>"); 
+	row.append(td1); 
+	var td2 = $("<td>"+record.phone+"</td>"); 
+	row.append(td2); 
+	var td3 = $("<td>"+record.moNo+"</td>"); 
+	row.append(td3); 
+	table1.append(row); 
+}
+function reCalcMouth(moTypeId){
+	$("#mouthTypeList tr td").each(function(){
+		var a = $($(this).find("a"));
+		if(a.attr("id")==moTypeId){
+			var num = (parseFloat(attr2) - 1);
+			var attr1 = a.attr("attr1");
+			var attr2 = a.attr("attr2");
+			if( num== 0){
+				a.attr("attr2",0);
+				a.html(attr1+"|0");
+			}else{
+				a.attr("attr2",num);
+				a.html(attr1+"|"+num);
+			}
+		}
+	});
+}
+ 
+function clearExpressInfo(){
+	$("#barcode").val('');
+	$("#phone").val('');
+	$("#testphone").val('');
+	$("#rephone").val('');
+	$("#paymoney").val('');
+	
+}
+function setBarCode(barcode,phone){
+	$("#barcode").val(barcode);
+	if(null != phone && ''!=phone){
+		$("#phone").val(phone);
+		$("#rephone").val(phone);
+		$("#testphone").val(phone);
+	}
+}
+function back(){
+	geturl('快递员登录首页界面.html');
+}
+(function() {  
+   var midContainer = new Array();  
+   var mapContainer = new Array();  
+   var MAPID = 0;  
+   function Map(mid) {  
+       var type = typeof (mid);  
+       if ((type != "string") && (type != "number")) {  
+           throw "Map id must be a string or number!";  
+       }  
+       for (var _c = 0; midContainer[_c]; _c++) {  
+           if (mid == midContainer[_c])  
+               throw "You have already created Map : " + mid;  
+       }  
+       var identify = MAPID++;  
+       midContainer[identify] = mid;  
+       mapContainer[identify] = {};  
+       mapContainer[identify]["id"] = mid;  
+       this.id = mid;  
+       this.prefix = "";  
+       this.toString = function() {  
+           return "This is a map object!";  
+       }  
+   }  
+ 
+ 
+   Map.prototype.getMapId = function() {  
+       return this.id;  
+   }  
+   Map.prototype.getMapIndex = function() {  
+       var index = -1;  
+       for (var _i = 0; mapContainer[_i]; _i++) {  
+           if (this.id == mapContainer[_i]["id"]) {  
+               index = _i;  
+           }  
+       }  
+       return index;  
+   }  
+   Map.prototype.put = function(key, value) {  
+       if ( typeof (key) != "string") {  
+           throw "key must be a string!";  
+       }  
+       if ( typeof (value) != "string") {  
+           throw "value shouldn't be a function!";  
+       }  
+       if (this.trimStr(key) == "") {  
+           throw "key is empty!";  
+       }  
+       var index = -1;  
+       index = this.getMapIndex();  
+       if (index != -1) {  
+           key = this.prefix + key;  
+           mapContainer[index][key] = value;  
+       }  
+   }  
+   Map.prototype.get = function(key) {  
+       var index = -1;  
+       index = this.getMapIndex();  
+       var value = "";  
+       if (index != -1) {  
+           var _tV = mapContainer[index];  
+           key = this.prefix + key;  
+           value = (_tV.hasOwnProperty(key)) ? _tV[key] : "";  
+       }  
+       return value;  
+   }  
+   Map.prototype.deleteKey = function(key) {  
+       var index = -1;  
+       index = this.getMapIndex();  
+       key = this.prefix + key;  
+       var _tV = mapContainer[index];  
+       if (_tV.hasOwnProperty(key)) {  
+           delete _tV[key];  
+       }  
+   }  
+ 
+   Map.prototype.clearMap = function() {  
+       var index = -1;  
+       index = this.getMapIndex();  
+       var maxId = MAPID - 1;  
+       if (index <= maxId) {  
+           for (var t = index; t < maxId; t++) {  
+               mapContainer[t] = mapContainer[t + 1];  
+               midContainer[t] = midContainer[t + 1];  
+           }  
+           mapContainer[maxId] = null;  
+           midContainer[maxId] = null;  
+           this.id = null;  
+           this.toString = null;  
+           MAPID--;  
+       }  
+   }  
+ 
+   Map.prototype.trimStr = function(str) {  
+       return str.replace(/(^\s*)|(\s*$)/g, "");  
+   }  
+   Map.prototype.isEmpty = function() {  
+        var index = -1;  
+        index = this.getMapIndex();  
+        if (index != -1) {  
+            for (var attr in mapContainer[index]) {  
+                //alert(mapContainer[index][attr]);  
+                if (attr != "id") {  
+                    return false;  
+                }  
+            }  
+        }  
+        return true;  
+    } 
+	Map.prototype.size = function(){
+		return this.MAPID;
+	}
+    Map.prototype.showMap = function() {  
+        var index = -1;  
+        index = this.getMapIndex();  
+        var str = "";  
+        if (this.id != null) {  
+            str = "Map:\t" + this.id + "\n";  
+            for (var attr in mapContainer[index]) {  
+                if (attr != "id") {  
+                    str += attr + ":\t" + mapContainer[index][attr] + "\n";  
+                }  
+            }  
+        } else {  
+            str = "This Map doesn't exist!";  
+        }  
+       // alert(str);  
+        return str;  
+    }  
+    window['Map'] = Map;  
+})(); 
+</script></html>

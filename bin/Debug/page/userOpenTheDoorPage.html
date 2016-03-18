@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>派宝箱</title>
+  <link href="css.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/web.js"></script>
+  <script type="text/javascript" src="js/delay.js"></script>
+  <link href="js/swf.css" rel="stylesheet" type="text/css" />
+</head>
+	<script>
+	var timeout2 = 30;
+	var openedNo = getUrlParam('openedNo');
+    var timer2 = '';
+	
+	$(setTimeout(function(){
+		//将拿到的编号的付给界面显示
+	$("#tackmoney").text(openedNo);
+	//开门亮,亮大格口
+	if(openedNo==1||openedNo==3||openedNo==4||openedNo==5)
+	{
+	$("#"+openedNo).attr("src","images/imgs/UI_3_01/doorL.png")
+	}
+	else if(openedNo>5||openedNo<18)
+	{
+	$("#"+openedNo).attr("src","images/imgs/UI_3_01/doorS.png")
+	}
+	else if(openedNo>18||openedNo<22)
+	{
+	$("#"+openedNo).attr("src","images/imgs/UI_3_01/doors1.png")
+	}
+	else
+	{
+	$("#"+openedNo).attr("src","images/imgs/UI_3_01/doorS.png")
+	}
+	    //应该是改变格口的状态,结束此操作
+	setTimeout(function(){
+		if (openedNo!="") {
+		   ebox.OpenBox();
+		   ebox.closeExpress();
+		}
+			$("#index").click(
+		function(){
+		geturl('index.html');
+		});
+		$("#userereopen").click(
+		function(){
+		 ebox.OpenBox();
+		 
+		  }
+		);
+		},1000);
+		
+		timedCount2();
+	},50));
+	
+		function timedCount2()
+	{
+		
+		setInterval(function(){
+		timeout2 = timeout2 -1;
+		$("#closetime").text(timeout2);
+		if(timeout2<=0){
+			geturl('index.html');
+		}
+		},1000)
+	};
+	</script>
+<body>
+<div style=" position:relative">
+<img src="images/imgs/EUI_2_01/allbg.png" no-repeat/>
+</div>
+<div style=" position:absolute; left:0px;top:0px; "> 
+  <div class="w1024 info_all">
+    <div class="info5_c" >
+				  <!-- 几号号码们打开提示-->
+				 <div style=" width:420px; height:70px; margin-top:55px">
+											
+							<div style="width:50px; height:70px; float:left" align="left">
+							<span id="tackmoney" style="font-size:90px; width:210px; color:#ffffff; text-align:left; height:70px; line-height: 70px; "></span>
+							</div>
+							<div style="width:265px; float:left; padding-left:60px;" >
+							<img src="images/imgs/UI_3_01/UI_3_opendoorhint.png" />
+							</div>
+				</div>
+				
+				
+				<!--柜门显示图片  -->
+				<div align="center"  style=" margin-top:30px;" >
+						<div style="width:700px;"> 
+						<img src="images/imgs/UI_3_01/UI_3-opendoor.png" style="width:700px;"/>
+						</div>
+						<div id="plank1" style="width:90px; height:100px; position:absolute; margin-top:-438px; left: 164px; top: 598px;">
+							
+								<div >
+								<img  width="84px" height="70px" id="1"/>	
+								</div>
+								<div style="margin-top:2px" >
+								<img  width="84px" height="35px" id="2" />
+								</div>
+								<div style="margin-top:1px" >
+								<img width="84px" height="70px" id="3"/>	
+								</div>
+								<div style="margin-top:9px">
+								<img  width="84px" height="70px"  id="4"/>	
+								</div>
+								<div style="margin-top:5px">
+								<img width="84px" height="70px" id="5"/>	
+								</div>	
+						</div>
+							
+						<div id="plank2" style="width:90px; height:100px; position:absolute; margin-top:-438px; left: 260px; top: 598px;">
+							
+								<div >
+								<img  width="84px" height="51px" id="6"/>	
+								</div>
+								<div style="margin-top:3px" >
+								<img  width="84px" height="51px" id="7"/>	
+								</div>
+								<div style="margin-top:2px" >
+								<img  width="84px" height="51px" id="8"/>	
+								</div>
+								<div style="margin-top:6px" >
+								<img  width="84px" height="51px" id="9"/>		
+								</div>
+								<div style="margin-top:5px" >
+								<img  width="84px" height="51px" id="10"/>			
+								</div>	
+								<div style="margin-top:5px" >
+								<img  width="84px" height="51px" id="11"/>			
+								</div>	
+						</div>
+									
+						<div id="plank3" style="width:90px; height:100px; position:absolute; margin-top:-438px; left: 355px; top: 598px;">
+							
+								<div >
+								<img  width="84px" height="51px" id="12"/>	
+								</div>
+								<div style="margin-top:3px" >
+								<img  width="84px" height="51px" id="13"/>	
+								</div>
+								<div style="margin-top:2px" >
+								<img  width="84px" height="51px" id="14"/>	
+								</div>
+								<div style="margin-top:6px" >
+								<img  width="84px" height="51px" id="15"/>		
+								</div> 
+								<div style="margin-top:5px" >
+								<img  width="84px" height="51px" id="16"/>			
+								</div>	
+								<div style="margin-top:5px" >
+								<img  width="84px" height="51px" id="17"/>			
+								</div>	
+						</div>		
+						<div id="plank4" style="width:90px; height:100px; position:absolute; margin-top:-438px; left: 453px; top: 598px;">
+							
+							
+								<div style="margin-top:233px">
+								<img  width="112px" height="38px"  id="18"/>		
+								</div>
+								<div style="margin-top:-2px" >
+								<img  width="112px" height="38px" id="19"/>				
+								</div>	
+								<div style="margin-top:-3px" >
+								<img  width="112px" height="38px" id="20"/>				
+								</div>	
+						</div>	
+					<div id="plank5" style="width:90px; height:100px; position:absolute; margin-top:-438px; left: 578px; top: 598px;">							
+								<div style="margin-top:0px" >
+								<img  width="84px" height="36PX" id="21"/>	
+								</div>
+								<div style="margin-top:2px" >
+									<img  width="84px" height="36PX" id="22"/>			
+								</div>	
+								<div style="margin-top:0px">
+									<img  width="84px" height="36PX"  id="23"/>		
+								</div>	
+								<div style="margin-top:0px" >
+									<img  width="84px" height="36PX" id="24"/>		
+								</div>	
+								<div style="margin-top:110px">
+								<img  width="84px" height="36PX"  id="25"/>		
+								</div>	
+								<div style="margin-top:0px" >
+									<img  width="84px" height="36PX" id="26"/>		
+								</div>	
+					</div>	
+					<div id="plank6" style="width:90px; height:100px; position:absolute; margin-top:-438px; left: 674px; top: 598px;">
+								<div style="margin-top:1px" >
+								<img  width="84px" height="35PX" id="27"/>	
+								</div>
+								<div style="margin-top:1px" >
+									<img  width="84px" height="35PX" id="28"/>			
+								</div>	
+								<div style="margin-top:1px" >
+									<img  width="84px" height="35PX" id="29"/>		
+								</div>	
+								<div style="margin-top:1px" >
+									<img  width="84px" height="35PX" id="30"/>		
+								</div>	
+								<div style="margin-top:-1px" >
+									<img  width="84px" height="35PX" id="31"/>		
+								</div>	
+								<div style="margin-top:-1px" >
+									<img  width="84px" height="35PX" id="32"/>		
+								</div>	
+								<div style="margin-top:-1px" >
+								<img  width="84px" height="35PX" id="33"/>		
+								</div>	
+								<div style="margin-top:-1px" >
+									<img  width="84px" height="35PX" id="34"/>		
+								</div>	
+								<div style="margin-top:0px" >
+									<img  width="84px" height="35PX" id="35"/>		
+								</div>	
+					</div>	
+					<div id="plank7" style="width:90px; height:100px; position:absolute; margin-top:-438px; left: 770px; top: 598px;">
+								<div style="margin-top:1px" >
+								<img  width="84px" height="35PX" id="36"/>	
+								</div>
+								<div style="margin-top:1px" >
+									<img  width="84px" height="35PX" id="37"/>			
+								</div>	
+								<div style="margin-top:1px" >
+									<img  width="84px" height="35PX" id="38"/>		
+								</div>	
+								<div style="margin-top:1px" >
+									<img  width="84px" height="35PX" id="39"/>		
+								</div>	
+								<div style="margin-top:-1px" >
+									<img  width="84px" height="35PX" id="40"/>		
+								</div>	
+								<div style="margin-top:-1px" >
+									<img  width="84px" height="35PX" id="41"/>		
+								</div>	
+								<div style="margin-top:-1px" >
+								<img  width="84px" height="35PX" id="42"/>		
+								</div>	
+								<div style="margin-top:-1px" >
+									<img  width="84px" height="35PX" id="43"/>		
+								</div>	
+								<div style="margin-top:0px" >
+									<img  width="84px" height="35PX" id="44"/>		
+								</div>	
+					</div>	
+									
+				</div> 
+				
+				
+				
+				
+				
+				<!--按钮-->
+				 <div align="center"  style=" margin-top:40px; width:560px;" >
+						 <div style="float:left; width:320px;" id="userreopen" >
+						   <img src="images/imgs/UI_3_01/UI_3_againopen.png"/> 
+						 </div>
+						 <div style="float:left; width:220px;padding-left:10px;" >
+						   <img src="images/imgs/UI_2_01/UI_2_10.png" onclick="geturl('index.html')"/>
+						 </div>
+				</div>
+				<!--30秒后关闭窗口提示-->
+				<div align="center"  style=" margin-top:40px" >
+							<span style=" color:#FFFFFF; font-size:20px;">
+							本窗口將於
+							<span id="closetime" style="padding-left:5PX; padding-right:5PX;color:#ffffff;">
+							30
+							</span>
+							秒後關閉
+							</span>							   
+				 </div>
+				 </div>
+				</div> 
+    </div>
+</body>
+
+</html>

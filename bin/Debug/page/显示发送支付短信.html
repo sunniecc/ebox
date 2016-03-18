@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+
+
+</head>
+<body>
+
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info17_c">
+    <div style="width:887px; margin:50px auto 20px auto; line-height:35px;" class="dt"><div class="l">欢迎使用派宝箱，您本次支付金额 &nbsp;&nbsp;&nbsp;</div> 
+	<div class="input6 l"><input type="text" id="txtNeedPay" /></div><div class="l">&nbsp;&nbsp;&nbsp;元</div>
+	</div>
+    <div class="clear"></div>
+	<div style="width:887px; margin:50px auto 20px auto; line-height:35px;" class="dt">
+	<div class="l">
+	请输入办理银行卡手机号&nbsp;&nbsp;
+	</div>
+	<div class="l input3"><input type="text" maxlength="15" id="bankPhone" onfocus="zzsz(this);"/>&nbsp;
+	</div>
+	</div>
+   <div class="bot" ><div class="botcc l"  style="display:none;" onclick="geturl('显示支付金额.html');">深圳通支付</div>
+	&nbsp;&nbsp;
+   <div class="botcc l" onclick="geturl('当前余额_选择支付方式.html');">返回</div>
+   <div class="botcc l" onclick="sendSMS1();">确定</div>
+   </div>
+  </div>
+    <div class="w1024 info_f fyh">
+		pakpobox v1.0
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+ebox.SetBizCode('EBOX2013');
+$(function(){
+	var uiData=json(ebox.GetUiData()); 
+	var accountMoney = uiData.UserInfo.userAccount.uaCurrActMoney;
+	var needPay = uiData.JiJianMoney-accountMoney;
+	$('#txtNeedPay').val(needPay);
+	$('#bankPhone').val(uiData.UserInfo.userInfo.ciUserPhone);
+});
+function validateCustAccount(vid){
+	var r = json(ebox.validateMoney());
+	if(r.success){
+		$("." + vid).remove();
+		$(".allpost").remove();
+		geturl('条码打印.html');
+	}else{
+		alert('充值金额还未到账，请稍候再试');
+	}
+}
+function sendSMS1(){
+	if($.trim($("#bankPhone").val()) == ''){
+		ms('系統提示','请输入办理银行卡手机号');
+		return;
+	}
+	if(confirm('确认手机号['+$("#bankPhone").val()+']为办理银行卡手机？')){
+		ebox.userSMSRecharge($('#txtNeedPay').val(),$("#bankPhone").val());
+		sendSMS();
+		var r = 1;//window.showModalDialog("显示支付短信发送中.html",window,"dialogWidth=700px;dialogHeight=350px;status=no;resizable=no;");
+		if(r == 1){
+			//geturl('条码打印.html');
+		}
+	}
+}
+
+function sendSMS(){
+	formhtml=getHtmlCon();
+	a = new $.pos({
+		title: '短信充值中',
+		width:700,center:true,top:20,left:30,//center：true 左右上下居中、false自定义top,left。
+		url:'',
+		form:formhtml
+		});
+	a.subdiy3();
+}
+function getHtmlCon1(){
+
+}
+function getHtmlCon(){
+	var html = '<div class="cen">';
+html+='<table width="689" border="0" cellspacing="0" cellpadding="0" style="background:none;">';
+  html+='<tr>';
+    html+='<td height="87">&nbsp;</td>';
+  html+='</tr>';
+  html+='<tr>';
+   html+='<td height="64" style=" background:url(images/info/eb.png) no-repeat 250px  10px;"><div class=" f20 t_l" style="margin-left:350px;">支付短信已经发送至您的个人<br />手机，请通过手机完成支付</div></td>';
+  html+='</tr>';
+  html+='<tr>';
+    html+='<td height="30">&nbsp;</td>';
+  html+='</tr>';
+  html+='<tr>';
+    html+='<td height="58" class="t f18" align="center">正在发送......</td>';
+  html+='</tr>';
+  html+='<tr>';
+   html+=' <td height="34">&nbsp;</td>';
+  html+='</tr>';
+  html+='<tr>';
+    html+='<td class="f18 t_l t"><div style="padding:15px; "><span class="f_f f_b">温馨提示：</span><br />';
+      html+='支付过程中，等充值成功后点击【确定】按钮进入下一步，若您充值未成功点击【确定】时，系统扔在该页面等待，或请取消短信充值点击<span class="tt f_b">［深圳通支付］</span></div></td>';
+  html+='</tr>';
+html+='</table>';
+   html+=' </div>';
+   return html;
+}
+</script>
+</html>

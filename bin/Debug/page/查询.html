@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8;IE=EmulateIE10" />
+<META HTTP-EQUIV="REFRESH" CONTENT="75;URL=index.html">
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+<style>
+body{
+scrollbar-face-color: #ffffff; 
+scrollbar-highlight-color: #e98127; 
+scrollbar-shadow-color: #ffffff; 
+scrollbar-arrow-color: #e98127; 
+scrollbar-base-color: #ffffff; 
+scrollbar-dark-shadow-color: #ffffff;
+}
+</style>
+</head>
+<body>
+<embed src="mp3/请输入您的包裹运单号或您的手机号码进行查询.mp3" autostart="true" hidden="true" loop="false">
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info7_c">
+	<div class="tit fyh f22 f_b">请输入您的包裹运单号或手机号码进行查询</div>
+    <div class="search f_b fyh" >
+	<div class="l  ml15">运单号</div>
+	<div class="input2 l ml15"><input name="barCode" id="barCode" value=""  onfocus="zzsz(this);"/></div>
+	<div class="l  ml15">或手机号</div><div class="input2 l  ml15"><input name="telephone"  id="telephone" value="" onfocus="zzsz(this);"/></div>
+	<div class="l  ml15">
+	<input id="search" type="image" style="outline:none;text-decoration:none;" src="images/info/search.png"/></div></div>
+    <div class="cen" id="expressList" >    
+	 <table width="100%" border="0" class="tableborder" cellspacing="0" cellpadding="0" id='tbList'>
+	  <tr class="tt f18 fyh">
+		<td width="16%" height="45" align="center" bgcolor="#c36d23" style="border:0; border-bottom:1px solid #e2b692;">运单号</td>
+		<td width="17%" align="center" bgcolor="#c36d23" style="border:0;border-bottom:1px solid #e2b692;">手机号码</td>
+		<td width="15%" align="center" bgcolor="#c36d23" style="border:0;border-bottom:1px solid #e2b692;">状态</td>
+		<td width="17%" align="center" bgcolor="#c36d23" style="border:0;border-bottom:1px solid #e2b692;">存入时间</td>
+		<td width="12%" align="center" bgcolor="#c36d23" style="border:0;border-bottom:1px solid #e2b692;">快递员</td>
+		<td width="23%" align="center" bgcolor="#c36d23" style="border:0;border-bottom:1px solid #e2b692;">快递员联系电话</td>
+	  </tr>
+	<tbody>
+	</tbody>
+	</table>
+    </div>
+  </div>
+	<div class="button"><img src="images/info/back_1.png" onclick="geturl('index.html');"/></div>
+    <div class="w1024 info_f fyh">
+		pakpobox v1.0
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+		$("#search").click(function(){
+		var barCodeVal 	 = $("#barCode").val();
+		var telephoneVal = $("#telephone").val();
+		closediv1('xnszjp');
+		if(barCodeVal==''&&telephoneVal==''){
+			ms('系統提示','请输入查询条件');
+			return ;
+		}
+		barCodeVal=$.trim(barCodeVal);
+		telephoneVal=$.trim(telephoneVal);
+		var list= json( ebox.orderCheckExpress(barCodeVal,telephoneVal)) ;
+		$('.tableborder tr:gt(0)').remove()
+		if(list && list.length == 0){
+			$("#expressList").removeAttr("style");
+			$('.tableborder tr:eq(0)').after('<tr class="f20 f_f fyh img_2" ><td colspan="6" height="70" align="left" class="p_l15">无查询结果</td></tr>');
+			
+		}else{
+			if(list.length > 5){
+				$("#expressList").attr("style","height:400px;overflow-y:auto;overflow-x:hidden;");	
+			}else{
+				$("#expressList").removeAttr("style");
+			}
+			for(var i=0;i<list.length;i++)
+			 {
+				var order = list[i];
+				var tr = '<tr class="f20 f_f fyh img_2"  >';
+				tr +=' <td height="70" align="left" class="p_l15">'+ (order.barNo?order.barNo:'') +'</td>';
+				tr +='  <td>'+order.takeUserPhone+'</td>';
+				tr +=' <td>'+order.status+'</td>';
+				tr +=' <td>'+order.storeTime+'</td>';
+				tr +=' <td align="center">'+order.storeUserName+'</td>';
+				tr +=' <td align="center" >'+ order.storeUserPhone+'</td>';
+				tr +=' </tr>';
+				 $('#tbList tr:eq(0)').after(tr);
+			 }
+	 
+		}
+		})
+})		
+</script>
+</html>

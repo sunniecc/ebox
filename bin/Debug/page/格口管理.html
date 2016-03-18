@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="js/delay.js"></script>
+<style>
+/* Tiny Scrollbar */
+#scrollbar1 { width: 900px; margin: 41px 0 10px; }
+#scrollbar1 .viewport { width: 830px; height: 420px; overflow: auto; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar1 .scrollbar{  position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar1 .track {  height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background: transparent url(images/info/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: auto; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { background: transparent url(images/info/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: auto; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+body{
+scrollbar-face-color: #ffffff; 
+scrollbar-highlight-color: #e98127; 
+scrollbar-shadow-color: #ffffff; 
+scrollbar-arrow-color: #e98127; 
+scrollbar-base-color: #ffffff; 
+scrollbar-dark-shadow-color: #ffffff;
+}
+</style>
+</head>
+<body>
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info4_c">
+	<div class="tit fyh f22 f_f img_2"><div class="l">從櫃設定</div><div class="r">
+	</div></div>
+    <div id="scrollbar1">
+		<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+		<div class="viewport">
+			 <div class="overview">
+			</div>
+		</div>
+	</div>
+  </div>
+  <div class="clear"></div>
+<div class="button"><img src="images/info/back_1.png" onclick="geturl('管理员登录首界面.html');"/></div>
+    
+</div>
+</body>
+<script type="text/javascript">
+   $(function(){
+      $('#scrollbar1').tinyscrollbar();
+	  $(".kk").live("click",function(){
+		  var gkid=$(this).attr("id");
+		  savegk(gkid); 
+	  });	  
+   });
+function  savegk11(gksaveid){
+	var r = window.showModalDialog("格口修改.html",window,"dialogWidth=1000px;dialogHeight=550px;status=no;resizable=no;");
+	if(r==1){
+		window.location.reload();
+	}
+}
+var mouthArkId = -1;
+function  savegk(gksaveid){
+	mouthArkId = gksaveid;
+	var kk=$('.kk').each(function(){
+		if($(this).attr("id") == gksaveid){
+			var exp = '';
+			if($(this).attr('state') == '使用'){
+				exp = getExpressByMouthNo($(this).attr('no'));
+			}
+			var barcode = '',custPhone = '',kuaiDiPhone = '',kuaiDiName = '',kuaiDiComp = '';
+			if('' != exp && exp != undefined){
+				if(exp.eiMailType == '1'){
+					//寄件
+					custPhone = exp.eiStoreUserPhone;
+				}else{
+					//存件
+					barcode = exp.eiBarcode;
+					custPhone = exp.eiTakeUserPhone;
+					kuaiDiPhone = exp.eiStoreUserPhone;
+					kuaiDiName = exp.eiStoreUserName;
+					kuaiDiComp = exp.eiLcName;
+				}
+			}
+			a = new $.pos({
+				title: "",
+				width:900,center:true,top:20,left:30,//center：true 左右上下居中、false自定义top,left。
+				suburl:"index.php",
+				opensuburl:"index.php",//开锁url，传递id
+				emptysuburl:"index.php",//清空url，传递id
+				formtitle:'<div class="con_tit dt"><div class="l gkt1">编号：<span>'+$(this).attr('no')+'  '+$(this).attr('state')+'</span></div> <div class="r gkt2" ></div><div class="r gkt3" ></div></div>',
+				id:$(this).attr('id'),
+				form:[
+					 {"name":'箱门类型','val':$(this).attr('type'),'input':'n1','option':mouthTypeList,'barcode':barcode,'custPhone':custPhone},
+					 {"name":'设置状态','val':$(this).attr('state'),'input':'n3','option':'空闲|使用|占用','kuaiDiPhone':kuaiDiPhone,'kuaiDiName':kuaiDiName},
+					 {"name":'箱门编号','val':$(this).attr('no'),'input':'n2','value':$(this).attr('no'),'kuaiDiComp':kuaiDiComp}
+				]
+			});
+			a.show2();
+			return false;
+		}
+	});
+	
+}
+
+function openDoor(arkId){
+	ebox.OpenBoxByArkId(arkId);
+}
+function closediv(id){
+	$("." + id).remove();
+    $(".allpost").remove();
+}
+function getExpressByMouthNo(no){
+	if('' == expressList){
+		return '';
+	}
+	for(var i = 0;i<expressList.length;i++){
+		if(expressList[i].eiLatticeNo == no){
+			return expressList[i];
+		}
+	}
+}
+function closediv122(id){
+	var n1 = $("#n1").val();//类型
+	var n2 = $("#n2").val();//编号
+	var n3 = $("#n3").val();//状态
+	if(mouthArkId > 0){
+		if(isNaN(n2)){
+			alert('格口编号无效');
+			return;
+		}
+		ebox.modifyMouthArk(mouthArkId,n1,n2,n3);
+	}
+	$("." + id).remove();
+    $(".allpost").remove();
+	window.location.reload();
+}
+ebox.SetBizCode('EBOX2037');
+var mouthTypeList = '';
+var mouthNoList = '';
+var expressList = '';
+$(function() {
+	$(this).doTimeout('EBOX2037', lazyTime, function() {
+		loadSysMouthArk();
+	});
+});
+function loadSysMouthArk(){
+	var mouthArkJson =json(ebox.loadAllMouthList());
+	var m = mouthArkJson.mouth;
+	if(null != m && m.length > 0){
+		for(var i = 0;i<m.length;i++){
+			mouthTypeList +=m[i].moModel+'|';
+		}
+		if(mouthTypeList.length > 0){
+			mouthTypeList = mouthTypeList.substring(0,mouthTypeList.length-1);
+		}
+	}
+	if(null != mouthArkJson.expressList && mouthArkJson.expressList.length >0){
+		expressList = mouthArkJson.expressList;
+	}
+	var v = mouthArkJson.mouthArk;
+	if(null != v && v.length > 0){
+		var mouthList = '';
+		for(var i =0;i<v.length;i++){
+			mouthNoList += v[i].moNo+'|';
+			if('1' == v[i].buzStatus){//空闲
+				mouthList +="<div class='kk' type='"+v[i].moTypeName+"' state='空闲' no='"+v[i].moNo+"' id='"+v[i].id+"'>";
+				mouthList +="<div class='k1'>"+v[i].moNo+"</div>";
+			}else if('2' == v[i].buzStatus){//使用
+				mouthList +="<div class='kk' type='"+v[i].moTypeName+"' state='使用' no='"+v[i].moNo+"' id='"+v[i].id+"'>";
+				mouthList +="<div class='k2'>"+v[i].moNo+"</div>";
+			}else{//系统占用
+				mouthList +="<div class='kk' type='"+v[i].moTypeName+"' state='占用' no='"+v[i].moNo+"' id='"+v[i].id+"'>";
+				mouthList +="<div class='k3'>"+v[i].moNo+"</div>";
+			}
+			if('1' == v[i].moColor){
+				mouthList +="<div class='s1' style='background:#708069'>"+v[i].moTypeName+"</div>";
+			}else if('2' == v[i].moColor){
+				mouthList +="<div class='s1' style='background:#00B0F0'>"+v[i].moTypeName+"</div>";
+			}
+			else if('3' == v[i].moColor){
+				mouthList +="<div class='s1' style='background:#7E649E'>"+v[i].moTypeName+"</div>";
+			}
+			else if('4' == v[i].moColor){
+				mouthList +="<div class='s1' style='background:#EA700D'>"+v[i].moTypeName+"</div>";
+			}
+			else if('5' == v[i].moColor){
+				mouthList +="<div class='s1' style='background:#31859B'>"+v[i].moTypeName+"</div>";
+			}
+			else if('6' == v[i].moColor){
+				mouthList +="<div class='s1' style='background:#BF9000'>"+v[i].moTypeName+"</div>";
+			}
+			mouthList +="</div>";
+		}
+		$(".overview").html(mouthList);
+	}
+}
+</script>
+</html>

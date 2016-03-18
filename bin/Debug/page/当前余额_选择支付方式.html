@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+
+</head>
+<body>
+<embed src="mp3/请选择支付方式.mp3" autostart="true" hidden="true" loop="false">
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info19_c">
+    <div class="cen">
+    <div class="cen1">
+    <form method="post" action="" id="formye">
+    <div class="txt">
+<div class="l">您当前个人账户余额&nbsp;</div><div class="input6 l"><input type="text" id="txtAccountMoney"/></div><div class="l">&nbsp;元，系统扣除金额&nbsp;</div><div class="input6 l"><input type="text"  id="txtMoney" /></div><div class="l">&nbsp;元</div>
+<div class="clear"></div>
+<div class="w_a100" style="height:50px;"></div>
+<div id="divNeedPay">
+<div class="l">您需再支付&nbsp;</div><div class="input6 l"><input type="text"  id="txtNeedPay"/></div><div class="l">&nbsp;元，请选择支付方式</div>
+</div>
+   <div id="btnOk" class="bot"><div class="botcc ma" onclick="geturl('条码打印.html');">确认</div></div>
+</div>
+</form>
+<div class="clear"></div>
+<div class="txt2" id="divPic"><!--<img src="images/info/yeimg1.png" url="显示支付金额.html" /> --><img src="images/info/yeimg2.png" class="ml70" url="显示发送支付短信.html" /></div>
+</div>
+    </div>
+    <div class="clear"></div>
+   <div class="bot"><div class="botcc ma" onclick="geturl('index.html');">取消并退出</div></div>
+  </div>
+    <div class="w1024 info_f fyh">
+		pakpobox v1.0
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	var uiData=json(ebox.GetUiData()); 
+	var accountMoney = 0;
+	var userInfo = uiData.UserInfo;
+	if(null != userInfo.userAccount){
+		accountMoney = userInfo.userAccount.uaCurrActMoney;
+	}
+	$('#txtAccountMoney').val(accountMoney);
+	$('#txtMoney').val(uiData.JiJianMoney);
+	var needPay = uiData.JiJianMoney-accountMoney;
+	$('#txtNeedPay').val(needPay);
+	if(needPay>=0 ||accountMoney==0)
+	{
+		$('#divPic').show();
+		$('#divNeedPay').show();
+		$('#btnOk').hide();
+	}else
+	{
+		$('#divPic').hide();
+		$('#divNeedPay').hide();
+		$('#btnOk').show();
+	}
+
+ $(".txt2 img").click(function(){
+	 url=$(this).attr('url');
+	 $("#formye").attr('action',url);
+	 $("#formye").submit();
+	 })	
+})
+</script>
+</html>

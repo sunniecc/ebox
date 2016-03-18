@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	$(".che").click(function(){
+		if($(this).find('input').attr("checked")){
+			$(this).find("img").attr("src","images/info/checkbox1.png");
+			$(this).find("input").attr("checked",false);
+			}else{
+		$(this).find("img").attr("src","images/info/checkbox2.png");
+		$(this).find("input").attr("checked","checked");
+			}
+	});
+	
+	
+});
+
+function subform(n){
+	if(n=='ple'){
+		if(!$("form input:checked").attr("checked")){
+			alert("请选择！");
+			return false;
+			}	
+	}
+	
+	if(n=='all'){
+		$("form input").attr("checked","checked");
+		$(".che img").attr("src","images/info/checkbox2.png");
+		if(!$("form input:checked").attr("checked")){
+			alert("没有处理的信息！");
+			return false;
+			}	
+	}
+	
+	$("form").submit();
+	
+	
+	
+}
+
+</script>
+</head>
+<body>
+
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info1_c">
+	<div class="tit fyh f22">您正在取逾期件</div>
+    <div class="cen">
+    <form action="index.php"  method="post"> 
+ <table width="100%" border="0" class="tableborder" cellspacing="0" cellpadding="0">
+  <tr class="tt f18 fyh">
+    <td width="22%" height="45" align="center" bgcolor="#c36d23" style="border:0; border-bottom:1px solid #e2b692;">运单号</td>
+    <td width="23%" align="center" bgcolor="#c36d23" style="border:0;border-bottom:1px solid #e2b692;">用户手机号码</td>
+    <td width="20%" align="center" bgcolor="#c36d23" style="border:0;border-bottom:1px solid #e2b692;">存件时间</td>
+    <td width="12%" align="center" bgcolor="#c36d23" style="border:0;border-bottom:1px solid #e2b692;">格口</td>
+    <td width="23%" align="center" bgcolor="#c36d23" style="border:0;border-bottom:1px solid #e2b692;">逾期天数</td>
+  </tr>
+  
+  <tr class="f20 f_f fyh img_2">
+    <td height="70" align="left" class="p_l15 che"><input name="id[]" type="checkbox" value="1" /><img src="images/info/checkbox1.png" />&nbsp;&nbsp;&nbsp;&nbsp;李三圣</td>
+    <td>13899565521</td>
+    <td>2014-04-28</td>
+    <td>22</td>
+    <td align="right" class="p_r25">3 天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/info/back.png" onclick="geturl('格口打开-系统管理员.html')" /></a></td>
+  </tr>
+
+
+  <tr class="f20 f_f fyh img_2">
+    <td height="70" align="left" class="p_l15 che"><input name="id[]" type="checkbox" value="1" /><img src="images/info/checkbox1.png" />&nbsp;&nbsp;&nbsp;&nbsp;李三圣</td>
+    <td>13899565521</td>
+    <td>2014-04-28</td>
+    <td>22</td>
+    <td align="right" class="p_r25">3 天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/info/back.png" onclick="geturl('格口打开-系统管理员.html')" /> </td>
+  </tr>
+
+
+  <tr class="f20 f_f fyh img_2">
+    <td height="70" align="left" class="p_l15 che"><input name="id[]" type="checkbox" value="1" /><img src="images/info/checkbox1.png" />&nbsp;&nbsp;&nbsp;&nbsp;李三圣</td>
+    <td>13899565521</td>
+    <td>2014-04-28</td>
+    <td>22</td>
+    <td align="right" class="p_r25">3 天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/info/back.png" onclick="geturl('格口打开-系统管理员.html')" /></a></td>
+  </tr>
+  
+  <tr class="f20 f_f fyh img_2">
+    <td height="70" align="left" class="p_l15 che"><input name="id[]" type="checkbox" value="1" /><img src="images/info/checkbox1.png" />&nbsp;&nbsp;&nbsp;&nbsp;李三圣</td>
+    <td>13899565521</td>
+    <td>2014-04-28</td>
+    <td>22</td>
+    <td align="right" class="p_r25">3 天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/info/back.png" onclick="geturl('格口打开-系统管理员.html')"  /></a></td>
+  </tr>
+  
+  
+  <tr class="f20 f_f fyh img_2">
+    <td height="70" align="left" class="p_l15 che"><input name="id[]" type="checkbox" value="1" /><img src="images/info/checkbox1.png" />&nbsp;&nbsp;&nbsp;&nbsp;李三圣</td>
+    <td>13899565521</td>
+    <td>2014-04-28</td>
+    <td>22</td>
+    <td align="right" class="p_r25">3 天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/info/back.png"  onclick="geturl('格口打开-系统管理员.html')" /></a></td>
+  </tr>
+  
+  
+  <tr class="f20 f_f fyh img_2">
+    <td height="70" align="left" class="p_l15 che"><input name="id[]" type="checkbox" value="1" /><img src="images/info/checkbox1.png" />&nbsp;&nbsp;&nbsp;&nbsp;李三圣</td>
+    <td>13899565521</td>
+    <td>2014-04-28</td>
+    <td>22</td>
+    <td align="right" class="p_r25">3 天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/info/back.png" onclick="geturl('格口打开-系统管理员.html')" /></a></td>
+  </tr>
+ </table>
+ 
+ 
+</form>
+
+    </div>
+	<div class="button"><img src="images/info/back_1.png"   onclick="geturl('管理员登录首界面.html')"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/info/no_opt.png" class="cur" onclick="geturl('格口打开-c1.html')" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/info/all_back.png" class="cur"  onclick="geturl('格口打开-c1.html')" /></div>
+	
+  </div>
+  
+    <div class="w1024 info_f fyh">
+		pakpobox v1.0
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>派宝箱</title>
+    <link href="css.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/web.js"></script>
+<script type="text/javascript" src="js/delay.js"></script>
+</head>
+<body>
+    <embed src="mp3/请选择快递公司.mp3" autostart="true" hidden="true" loop="false">
+<div class="w1024 info_all">
+        <div class="w1024 info_t">
+            <img src="images/info/logo.png" onclick="geturl('寄件称重.html')" />
+        </div>
+        <div class="info12_c">
+            <div class="tit f30">
+                请选择您需要的快递公司</div>
+            <ul id="cmpList">
+            </ul>
+            <div class="bot">
+                <div class="botcc l" onclick="geturl('完善寄件信息.html')">
+                    上一步</div>
+                <div class="botcc r" onclick="geturl('index.html')">
+                    取消并退出</div>
+            </div>
+        </div>
+        <div class="w1024 info_f fyh">
+            pakpobox v1.0
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+		$(this).doTimeout('EBOX2009', 100, function() {
+			loadExpressCompanyList();
+		});
+	});
+	ebox.SetBizCode('EBOX2009');
+	function loadExpressCompanyList(){
+		var configList = json(ebox.GetLogisticsCompanyConfig());
+		$('#cmpList').html('');
+		for (var i = 0; i < configList.length; i++) {
+			var config = configList[i];
+			$('#cmpList').append('<li> <div style="text-align:center;line-height:150px;background-color:#D38E55; width:200px;height:150px; font-size: 36px;color:White;" onclick="geturl(\'寄件称重.html?CmpID=' + config.LCLCMAINID + '\')" >' + config.LCLCMAINNAME + '</div> </li>');
+		}
+	}
+    </script>
+</html>

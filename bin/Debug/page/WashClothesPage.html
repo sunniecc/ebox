@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<head>
+  <title>派宝箱</title>
+  <link href="css.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/web.js"></script>
+  <script type="text/javascript" src="js/delay.js"></script>
+  <link href="js/swf.css" rel="stylesheet" type="text/css" />
+</head>
+	<script>
+	$(function(){
+	
+	//判断格口是否已经用完
+	//定义一个存储已用格口数量的变量
+	$(".img1").click(function(){
+	
+	var openedNo =ebox.LookFreeBox();
+	if(openedNo == 0){
+		//如果已经用完就跳转到格口已满提示框，拨打电话人工服务
+		geturl('DoorFullPage.html');
+		return;
+	}
+	
+	//如果没有满就转到磅洗称重界面
+	else{
+	 window.location.href="WeighPage.html";
+	
+	}
+	
+	
+	});
+	//二维码取件
+		$(".QRCODE").click(function(){
+				ebox.InitBarCodeScannerToRead();
+			});
+	
+	});
+	
+	</script>
+<body>
+ <div style=" position:relative">
+<img src="images/imgs/EUI_2_01/allbg.png" no-repeat/>
+</div>
+<div style=" position:absolute; left:0px;top:0px; "> 
+  <div class="w1024 info_all">
+       
+    <div class="info5_c" >
+				
+			<div  align="left" style=" margin-left:30px;margin-top:30px">
+			<!--返回首页按钮-->
+					<img src="images/imgs/UI_2_01/UI_2-22.png" onclick="geturl('index.html')"/>
+			</div>
+			<div class="info5_h1">
+					<img src="images/imgs/UI_2_01/UI_2_selectservice.png" style="width:500px" />
+			</div>
+			
+		<!--磅洗或干洗按钮的-->
+	   <div align="center"  class="info5_btn_pic" >
+		     <div style="width:850px">
+						<!-- 磅洗-->
+				 <div class="img1"  style="float:left; width:390px; height:330px" >
+				  <!--称重的页面-->
+				        <img src="images/imgs/UI_2_01/UI_2_3.png"/>
+					   
+						
+				 </div >
+					  <!-- 取衣-->
+				 <div class="img2 QRCODE" style="float:left; width:400px; height:350px; margin-left:50px"  >
+				
+					    <img src="images/imgs/UI_2_01/UI_2_2.png" onclick="geturl('QrCodePickup.html')"/>
+				 </div >
+			 </div>
+	   </div>
+	</div>
+	
+	
+   </div>
+   </div>
+</body>
+
+</html>

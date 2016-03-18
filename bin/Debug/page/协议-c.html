@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#pContent").html(ebox.GetUserProtocol());
+})
+
+   $(function(){
+	   $('#scrollbar1').tinyscrollbar();
+      var tthieght=$(".overview").height();
+	  $(".otop").click(function(){
+		  tttop=$(".overview").css('top');
+		  tttop=parseInt(tttop)+(-150); 
+		$(".overview").animate({ top:tttop}, 500 );;
+		}); 
+		
+		$(".obottom").click(function(){
+		  tttop=$(".overview").css('top');
+		  tttop=parseInt(tttop)+(150); 
+		$(".overview").animate({ top:tttop}, 500 );
+
+		}); 
+
+
+ 
+   });
+   
+
+</script>
+<style>
+/* Tiny Scrollbar */
+#scrollbar1 { width: 849px;  font-size:20px; line-height:35px;  background:url(images/info/xybg.png) no-repeat; padding:28px 20px 28px 20px;}
+#scrollbar1 .viewport { width: 802px; height: 446px; overflow: hidden; position: relative;}
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar1 .scrollbar{  position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar1 .track {  height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background: transparent url(images/info/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { background: transparent url(images/info/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+</style>
+</head>
+<body>
+<embed src="mp3/首次使用，请您先阅读用户协议.mp3" autostart="true" hidden="true" loop="false">
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info9_c">
+	<div class="tit fyh f22 f_f img_2">请您阅读派宝箱用户协议</div>
+    <div id="scrollbar1">
+            <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+            <div class="viewport">
+			<div id="pContent" class="overview fyh f_f t_l">
+			</div>   
+            </div>
+        </div>
+	<div style="margin-top:30px;">
+    <div class="bottom3 cur"  onclick="geturl('index.html');">取消并退出</div><div class="l" style="width:570px;"><img src="images/info/y_l.png" class="cur otop" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/info/y_r.png"  class="cur obottom"  /></div><div class="bottom3  cur" onclick="geturl('用户注册_短信验证.html');">同意并确定</div>
+    </div>
+  </div>
+  <div class="clear"></div>
+    <div class="w1024 info_f fyh">
+		pakpobox v1.0
+	</div>
+
+</div>
+
+</body>
+</html>

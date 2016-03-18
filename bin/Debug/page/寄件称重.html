@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+
+</head>
+<body>
+<embed src="mp3/请将包裹放入派宝箱电子秤台，系统将为您计算邮寄费用.mp3" autostart="true" hidden="true" loop="false">
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info13_c">
+	<div class="tit2 f20 f_f">请将代寄包裹放入派宝箱秤台，系统将为您计算邮寄费用。</div>
+    <div class="tit3 f16">温馨提示：系统将优先从您的个人账号扣除相应费用</div>
+    <div class="cen">
+    <!-- <form action="" method="post" id="form"> -->
+      <table width="300" border="0" align="right" style="margin-top:50px;" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="115" align="center">物体重量</td>
+          <td width="106" align="center"><div class="input6 l"><input type="text" name="weight" readonly="readonly" ID="TextGetWeight" /></div></td>
+          <td width="79" align="center">克</td>
+        </tr>
+          <tr>
+          <td align="center">&nbsp;</td>
+          <td align="center">&nbsp;</td>
+          <td align="center">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center">邮寄费用</td>
+          <td align="center"><div class="input6 l"><input type="text" name="expressCost" readonly="readonly" id="txtMoney"/></div></td>
+          <td align="center">元</td>
+        </tr>
+      
+      </table>
+	   <!--  </form> -->
+    </div>
+    
+   <div class="bot"><div class="botcc l"  onclick="geturl('index.html')">取消并退出</div> <div class="botcc1 l" onclick="geturl('选择快递公司.html')" style="margin-left:60px;">重新选择快递公司</div> <div class="botcc r upform"  onclick="jumpNext();" >继续</div></div>
+   </div>
+
+    <div class="w1024 info_f fyh">
+		pakpobox v1.0
+	</div>
+
+</div>
+
+</body>
+<script type="text/javascript">
+
+ebox.SetBizCode('EBOX2010');
+ebox.SetCmpID(getUrlParam('CmpID'));
+
+function OnShowWeight(weight){
+	$('#TextGetWeight').val(weight);
+}
+function OnReadWeight(weight,money)
+{
+	$('#TextGetWeight').val(weight);
+	$('#txtMoney').val(money);
+}
+function jumpNext(){
+	var money  = $('#txtMoney').val();
+	if(money != null && parseFloat(money) > 0){
+		geturl('当前余额_选择支付方式.html');
+	}
+}
+ebox.InitElcWeight();
+$(function(){
+	$(window).unload(function(){
+		ebox.StopWeightRead();
+	});
+	$(".upform").click(function(){
+		$("#form").submit();
+		})
+	})
+	 $(window).load(function() {
+          //setTimeout("external.getWeight(' ')",3000);
+        });
+</script>
+</html>

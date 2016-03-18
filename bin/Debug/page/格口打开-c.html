@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派寶箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+
+</head>
+<body>
+
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info15_c">
+	<div class="tit2 f40 f_b f_f">歡迎使用派寶箱</div>
+    <div class="tit4" id="divMonos"><span class="f40 fyw f_b" id="gridNum"></span>&nbsp;&nbsp;&nbsp;號格口已經打開，請取走包裹，並關閉格門！</div>
+    
+    <div class="cen">
+    	<table width="523" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="line-height:40px;"><img src="images/info/jj12bg.png" /><br />系統将在 <span class="time fyw f_b ">30</span> 秒后返回</td>
+     <td class="t_l">&nbsp;</td>
+  </tr>
+</table>
+</div>
+
+<div class="bot" align="center">
+<div class="botcc" onclick="finish()">確定</div>
+</div>
+
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	window.setInterval("timeget()",1000);
+  });
+function timeget(){
+	timetxt=$(".time").text();
+	if(timetxt==0){
+		finish();
+		location.href = "index.html";
+		return false;
+	}
+	timetxt--
+	$(".time").text(timetxt);
+}
+var idJudge=location.search.substring(0,4);
+var uiData = json(ebox.GetUiData());
+var usertype = uiData.UserType;
+//不要打开ebox.SetBizCode('EBOX2022');
+$(window).load(function() {
+	//var v = ebox.openBox();
+	var v = json(ebox.GetUiData());
+	//$("#gridNum").text(v.JiJianMouthNo);
+	$("#gridNum").text(parames['lockArrStr']);
+});
+var idArrG='';
+function finish(){
+	idArrG = location.search.substring(2).split(',');
+	//ebox.finishGetExpress(parames['idArrStr']);
+	if (idJudge === '?a=1') {
+		ebox.finishGetExpressForTakeSend(parames['idArrStr']);
+	}
+	if(idJudge === '?a=2'){
+		ebox.finishGetExpressForTakeAbnormal(parames['idArrStr']);
+	}
+	if(usertype == 4){
+			geturl('快递员登录首页界面.html');
+		}else if(usertype == 3){
+			geturl('管理员登录首界面.html');
+		}else{
+			geturl('index.html');
+		}
+}
+parames = parames_ebox(location.search);
+function parse_url(url){ //定义函数
+    			var pattern = /(\w+)=(\w+)/ig;//定义正则表达式
+    			var parames = {};//定义数组
+    			url.replace(pattern, function(a, b, c){
+    					parames[b] = c;
+    			});
+    			return parames;//返回这个数组.
+}
+
+function parames_ebox(url){
+	arry = url.split(idJudge)[1].split('&');
+	var parames = {};
+	for( a in arry){
+			aa = arry[a].split('=');
+			parames[aa[0]] = aa[1]
+	}
+	return parames
+}
+
+
+</script>
+</html>

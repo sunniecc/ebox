@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>派宝箱</title>
+  <link href="css.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/web.js"></script>
+  <script type="text/javascript" src="js/delay.js"></script>
+  <link href="js/swf.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div style=" position:relative">
+<img src="images/imgs/EUI_2_01/allbg.png" no-repeat/>
+</div>
+<div style=" position:absolute; left:0px;top:0px; "> 
+<div class="w1024 info_all">
+  <div  >
+    <div  align="left" style=" margin-left:30px;margin-top:30px"> <img src="images/imgs/UI_2_01/UI_2-22.png" onclick="geturl('index.html')"/> </div>
+    <div class="info5_h1" style="margin-top:0PX; width:1024PX; height:90PX; font-size:50px"> 您需要支付的金额 </div>
+   <div class="info17_c">
+    <div style="width:550px; margin:30px auto 20px auto; line-height:35px;" class="dt"><div class="l" style="margin-left:50px;margin-top:10px" ><span style="font-size:30px; font-weight:900; ">您本次支付逾期金额</span> &nbsp;&nbsp;&nbsp;</div> 
+	<div class="input6 l"><input type="text" id="txtNeedPay" readonly="readonly"/></div><div class="l" style="margin-top:10px">&nbsp;&nbsp;&nbsp;<span style="font-size:30px; font-weight:900">元</span></div>
+	</div>
+	<div style="width:550px; margin:50px auto 20px auto; line-height:35px;" class="dt">
+	<div class="l" style="margin-left:50px;margin-top:10px">
+	<span style="font-size:30px; font-weight:900; margin-top:10px">您本次支付其他情况金额</span>&nbsp;&nbsp;
+	</div>
+	<div class="input6 l"><input type="text" maxlength="15" id="needpPayOtherMoney" readonly="readonly"/>
+	</div><div class="l" style="margin-top:10px">&nbsp;&nbsp;&nbsp;<span style="font-size:30px; font-weight:900">元</span></div>
+	</div>
+	
+    <!--确定和返回按钮-->
+    <div align="center" style="margin-top:-10px;" >
+      <div  style="width:450px; margin-top:50px; padding-left:70px">
+        <!--返回按钮-->
+        <div style="float:left;"> <img src="images/imgs/UI_2_01/UI_2_7.png" onclick="geturl('WashClothesPage.html')"/> </div>
+        <!--确定按钮-->
+        <div style="float:left; padding-left:50px"> <img src="images/imgs/UI_2_01/UI_2_10.png" id="isok"/> </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div></div>
+
+</body>
+<script type="text/javascript">
+ebox.SetBizCode('EBOX2048');
+var paymentmonry;
+var payothermoney;
+$(function(){
+	paymentmonry=ebox.getPaymentMoney();
+	$('#txtNeedPay').val(ebox.getPaymentMoney());
+	payothermoney=ebox.getPayOtherMoney();
+	$('#needpPayOtherMoney').val(ebox.getPayOtherMoney());
+});
+
+$('#isok').click(
+	function(){
+	 ebox.expressCardInit();
+	 ebox.octopusCardCmd(2,0,0,0,1,321,0,0,paymentmonry,0,payothermoney,paymentmonry+payothermoney,0,'0001-1-1',0,0);
+	  var r="";
+	 window.setInterval(function()
+			  {
+				r=ebox.returnCardReply();
+						if(r==1)
+						 {								 		
+							//支付成功，打开格口
+							 var door = json(ebox.GetUiData()).QuJianOrder.EILATTICENO;
+							 window.location.href="userOpenTheDoorPage.html?openedNo="+door;
+						 }
+			  },1000);
+			  //返回首页		 
+		});
+	$(window).unload(function(){
+		ebox.StopCoinMachine();
+	});
+$(window).load(function() {
+    ebox.StartCoinMachine();
+});
+function OnCodeScan(code){
+	
+}
+
+function OnTouchCoin(cnt){
+	$("#paymentMoney").val(cnt);
+	if(cnt == $("#txtNeedPay").val()){
+		var rst = json(ebox.paymentOvertimeExpress(cnt));
+		if(rst.success){
+			geturl('取件格口打开.html');
+		}
+	}
+}
+</script>
+</html>

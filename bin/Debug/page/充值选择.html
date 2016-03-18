@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css.css">
+<link href="js/swf.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+</head>
+<body>
+<embed src="mp3/请选择支付方式.mp3" autostart="true" hidden="true" loop="false">
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info18_c ">
+    <div class="tit2 f24 f_b" style=" line-height:60px; position:relative;"  >欢迎使用派宝箱<br />
+      您本次充值金额为<div class="input6" style=" position: absolute; top:70px; left:616px;"><input type="text" id="recharge" name=""></div><br />
+<br />
+    </div>
+    <div class="clear"></div>
+    <div class="cen">
+      <table border="0" align="center" cellpadding="0" cellspacing="0" >
+  <tr>
+	<!--
+    <td><img src="images/info/yeimg1.png" width="307" height="187" onclick="geturl('显示支付金额-c.html');"/></td>
+    <td>&nbsp;&nbsp;&nbsp;</td>-->
+    <td><img src="images/info/yeimg2.png" width="307" height="187" onclick="geturl('显示发送支付短信-c.html');"/></td>
+  </tr>
+      </table>
+    </div>
+  <div style=" width:120px; margin:100px 0  0 600px;" >
+  	     <div class="botcc" onclick="geturl('会员中心.html')">取消</div>
+  </div> 
+    <div class="w1024 info_f fyh">
+		pakpobox v1.0
+	</div>
+</div>
+</body>
+
+<script type="text/javascript">
+ebox.SetBizCode('EBOX2030');
+$(function(){
+	$("#recharge").val(ebox.getMemberCenterMoney());
+});
+</script>
+</html>

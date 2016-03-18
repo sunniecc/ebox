@@ -1,0 +1,737 @@
+$(function(){
+	
+	//alert($(".footl").height());
+
+});
+
+(function ($) {
+    $.pos = function (arr) {
+        var name = "你好";     //这个是私有变量，外部无法访问
+		var html="";
+		var html2="";
+		var injson="";
+		var html23="";
+		 this.show = function () {
+			 $.each(arr.form,function(index,bc){
+				if(index==0){
+					  injson+=bc.input;
+					}else{
+					  injson+=','+bc.input;
+						}
+		html2+='<tr><td width="80" height="60" align="center" class="i2tts"><input name="name" type="radio" value="1" class="hide" /><input name="id[]" type="checkbox" value="1" class="dei" /><img src="images/info/checkbox1.png"   class="c" /></td><td width="96" align="left">'+bc.name+'</td><td width="204"><div class="input1"><input  name="'+bc.input+'" type="text" value="'+bc.val+'" id="eamil'+index+'" onBlur="test(\'eamil'+index+'\',\'jpsrf\');" onfocus="test(\'eamil'+index+'\',\'jpsrf\');" /></div></td></tr>';
+		  });
+		  
+		html+='<div class="post" style="top:'+arr.top+'px; left:'+arr.left+'px; width:'+arr.width+'px;">';
+		html+='<div class="tit"><div class="close" onclick="javascript:closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:'+(arr.width-26)+'px">'+arr.title+'</div><div class="titr"></div></div>';
+		html+='<div class="content">';
+		html+='<table width="100%" height="100" border="0" cellpadding="0" cellspacing="0">';
+		html+='<tr>';
+		html+='<td width="10" class="conl"></td>';
+		html+='<td class="conc">';
+		html+=arr.formtitle;
+		html+='<form id="formUpdate" json="'+injson+'" action="'+arr.suburl+'" onsubmit="return submitform();" target="_self"><input name="id" type="hidden" value="'+arr.id+'" />';
+		html+='<table width="380" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">';   
+		html+=html2
+		html+='<tr><td height="60" colspan="3" align="center"><input name="" type="image" src="images/post/sub.png" /></td></tr>';
+		html+='</table></form></td>';
+		html+='<td width="10" class="conr"></td>';
+		html+='</tr>';
+		html+='</table>';
+		html+='</div>';
+		html+='<div class="foot"><div class="footl"></div><div class="footc" style="width:'+(arr.width-26)+'px"></div><div class="footr"></div></div></div>';
+        $("body").append(html);
+		$("body").append('<div class="allpost"></div>');
+		$(".i2tts .c").click(function(){
+		if($(this).parent().find('input').eq(0).attr("checked")){
+			$(this).parent().find("img").attr("src","images/info/checkbox1.png");
+			$(this).parent().find("input").attr("checked",false);
+			}else{
+		$(this).parent().find("img").attr("src","images/info/checkbox2.png");
+		$(this).parent().find("input").attr("checked","checked");
+			}
+								   });
+		if(arr.center){
+		sleft=(($(window).width()-arr.width)/2);
+		sstop=(($(window).height()-$(".post").height())/2);
+		$(".post").css({'left':sleft,'top':sstop});
+			
+			}
+			
+		
+        };
+		
+		this.showRechargeWin = function() {
+            var i = 0;
+            $.each(arr.form,
+            function(index, bc) {
+
+                if (index == 0) {
+                    injson += bc.input;
+                } else {
+                    injson += ',' + bc.input;
+                }
+                i++;
+                //alert(i);
+                html23 += '<td height="60" width="205" style="padding-left:240px;" ><div class="input1 l"><input  name="' + bc.input + '" type="text" value="' + bc.val + '" /></div></td><td align="left">' + bc.name + '&nbsp;</td>';
+                if (i == 2) {
+                    i = 0;
+                    html2 += '<tr>' + html23 + '</tr>';
+                    html23 = "";
+                } else {
+					html2 += '<tr>' + html23 + '</tr>';
+				}
+
+            });
+
+            html += '<div class="post delete" style="display:none;top:' + arr.top + 'px; left:' + arr.left + 'px; width:' + arr.width + 'px;">';
+            html += '<div class="tit"><div class="close" onclick="javascript:closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:' + (arr.width - 26) + 'px">' + arr.title + '</div><div class="titr"></div></div>';
+            html += '<div class="content">';
+            html += '<table width="100%"  border="0" cellpadding="0" cellspacing="0" >';
+            html += '<tr>';
+            html += '<td width="10" class="conl"></td>';
+            html += '<td class="conc">';
+            html += arr.formtitle;
+            html += '<form id="formUpdate" json="' + injson + '" action="' + arr.suburl + '" onsubmit="return submitform();" target="_self"><input name="id" type="hidden" value="' + arr.id + '" />';
+            html += '<table width="700" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">';
+            html += '<tr><td height="30" colspan="3" align="center">&nbsp;</td></tr>';
+            html += html2;
+			html += '<tr><td height="30" colspan="3" align="center">&nbsp;</td></tr>';
+            html += '<tr><td height="60" colspan="3" align="center" style="padding-left:180px;"><div class="bottom fyh l" onclick="closeWin(\'post\');">取消</div><div class="bottom fyh l" onclick="getform(\'' + arr.opensuburl + '\',\'' + arr.id + '\');">确定</div></td></tr>';
+            html += '</table></form></td>';
+            html += '<td width="10" class="conr"></td>';
+            html += '</tr>';
+            html += '</table>';
+            html += '</div>';
+            html += '<div class="foot"><div class="footl"></div><div class="footc" style="width:' + (arr.width - 26) + 'px"></div><div class="footr"></div></div></div>';
+            $("body").append(html);
+			
+			(function(){
+				$("body").find('.post.delete').fadeIn(arr.waitTime || 0);
+			})();
+			
+            $("body").append('<div class="allpost"></div>');
+            //alert(html);
+            if (arr.center) {
+                sleft = (($(window).width() - arr.width) / 2);
+                sstop = (($(window).height() - $(".post").height()) / 2);
+                $(".post").css({
+                    'left': sleft,
+                    'top': sstop
+                });
+            }
+        };
+		
+		this.showRechargeWin_c = function() {
+            var i = 0;
+            $.each(arr.form,
+            function(index, bc) {
+
+                if (index == 0) {
+                    injson += bc.input;
+                } else {
+                    injson += ',' + bc.input;
+                }
+                i++;
+                //alert(i);
+                html23 += '<td height="60" width="205" style="padding-left:240px;" ><div class="input1 l"><input onfocus="zzsz(this);" name="' + bc.input + '" type="text" value="' + bc.val + '" /></div></td><td align="left">' + bc.name + '&nbsp;</td>';
+                if (i == 2) {
+                    i = 0;
+                    html2 += '<tr>' + html23 + '</tr>';
+                    html23 = "";
+                } else {
+					html2 += '<tr>' + html23 + '</tr>';
+				}
+
+            });
+
+            html += '<div class="post delete" style="display:none;top:' + arr.top + 'px; left:' + arr.left + 'px; width:' + arr.width + 'px;">';
+            html += '<div class="tit"><div class="close" onclick="javascript:closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:' + (arr.width - 26) + 'px">' + arr.title + '</div><div class="titr"></div></div>';
+            html += '<div class="content">';
+            html += '<table width="100%"  border="0" cellpadding="0" cellspacing="0" >';
+            html += '<tr>';
+            html += '<td width="10" class="conl"></td>';
+            html += '<td class="conc">';
+            html += arr.formtitle;
+            html += '<form id="formUpdate" json="' + injson + '" action="' + arr.suburl + '" onsubmit="return submitform();" target="_self"><input name="id" type="hidden" value="' + arr.id + '" />';
+            html += '<table width="700" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">';
+            html += '<tr><td height="30" colspan="3" align="center">&nbsp;</td></tr>';
+            html += html2;
+			html += '<tr><td height="30" colspan="3" align="center">&nbsp;</td></tr>';
+            html += '<tr><td height="60" colspan="3" align="center" style="padding-left:180px;"><div class="bottom fyh l" onclick="closeWin(\'post\');">取消</div><div class="bottom fyh l" onclick="getform_c(\'' + arr.suburl1 + '\',\'' + arr.id + '\');">确定</div></td></tr>';
+            html += '</table></form></td>';
+            html += '<td width="10" class="conr"></td>';
+            html += '</tr>';
+            html += '</table>';
+            html += '</div>';
+            html += '<div class="foot"><div class="footl"></div><div class="footc" style="width:' + (arr.width - 26) + 'px"></div><div class="footr"></div></div></div>';
+            $("body").append(html);
+			
+			(function(){
+				$("body").find('.post.delete').fadeIn(arr.waitTime || 0);
+			})();
+			
+            $("body").append('<div class="allpost"></div>');
+            //alert(html);
+            if (arr.center) {
+                sleft = (($(window).width() - arr.width) / 2);
+                sstop = (($(window).height() - $(".post").height()) / 2);
+                $(".post").css({
+                    'left': sleft,
+                    'top': sstop
+                });
+            }
+        };
+
+		this.showDeleteGkWin = function() {
+            $.each(arr.form,
+            function(index, bc) {
+                if (index == 0) {
+                    injson += bc.input;
+                } else {
+                    injson += ',' + bc.input;
+                }
+                option = bc.option;
+                option = option.split('|');
+                html2 += '<tr><td width="84" height="60" align="left">&nbsp;</td><td width="100"><ul class="select"><li class="t1"><input name="' + bc.input + '" type="hidden" value="' + bc.val + '" /><a href="#">' + bc.val + '</a><div class="clear"></div><ul>';
+                $.each(option,
+                function(index1, bc1) {
+                    html2 += '<li class="t2">' + bc1 + '';
+                });
+                html2 += '</li></ul></li></ul></td><td width="80" height="60" align="left">&nbsp;</td></tr>';
+            });
+
+            html += '<div class="post delete" style="display:none;top:' + arr.top + 'px; left:' + arr.left + 'px; width:' + arr.width + 'px;">';
+            html += '<div class="tit"><div class="close" onclick="javascript:closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:' + (arr.width - 26) + 'px">' + arr.title + '</div><div class="titr"></div></div>';
+            html += '<div class="content">';
+            html += '<table width="100%"  border="0" cellpadding="0" cellspacing="0" >';
+            html += '<tr>';
+            html += '<td width="10" class="conl"></td>';
+            html += '<td class="conc">';
+            html += arr.formtitle;
+            html += '<form id="formUpdate" json="' + injson + '" action="' + arr.suburl + '" onsubmit="return submitform();" target="_self"><input name="id" type="hidden" value="' + arr.id + '" />';
+            html += '<table width="700" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">';
+            html += '<tr><td height="30" colspan="3" align="center">&nbsp;</td></tr>';
+            html += html2;
+			html += '<tr><td height="30" colspan="3" align="center">&nbsp;</td></tr>';
+            html += '<tr><td height="60" colspan="3" align="center" style="padding-left:180px;"><div class="bottom fyh l" onclick="closeWin(\'post\',' + arr.waitTime + ');">取消</div><div class="bottom fyh l" onclick="getform(\'' + arr.opensuburl + '\',\'' + arr.id + '\');">确定</div></td></tr>';
+            html += '</table></form></td>';
+            html += '<td width="10" class="conr"></td>';
+            html += '</tr>';
+            html += '</table>';
+            html += '</div>';
+            html += '<div class="foot"><div class="footl"></div><div class="footc" style="width:' + (arr.width - 26) + 'px"></div><div class="footr"></div></div></div>';
+            $("body").append(html);
+			
+			(function(){
+				$("body").find('.post.delete').fadeIn(arr.waitTime || 0);
+			})();
+			
+            $("body").append('<div class="allpost"></div>');
+            //alert(html);
+            if (arr.center) {
+                sleft = (($(window).width() - arr.width) / 2);
+                sstop = (($(window).height() - $(".post").height()) / 2);
+                $(".post").css({
+                    'left': sleft,
+                    'top': sstop
+                });
+                //绑定事件
+                $(".select .t1 a").click(function() {
+                    $(".select .t1  ul").hide();
+                    if ($(this).parent().find('ul').is(":hidden")) {
+                        $(this).parent().find('ul').show();
+                        // alert(1);
+                    } else {
+                        $(this).parent().find('ul').hide();
+                    }
+
+                    $(".select").css({
+                        'z-index': 9998
+                    });
+                    $(this).parent().parent().css({
+                        'z-index': 9999
+                    });
+
+                    return false;
+                });
+
+                $(".select .t2").click(function() {
+                    txt = $(this).text();
+                    $(this).parent().parent().find('a').text(txt);
+                    $(this).parent().parent().find('input').val(txt);
+                    $(this).parent().find('ul').show();
+
+                });
+                $(document).mouseup(function(event) {
+                    if ($(event.target).parents(".select").length == 0) {
+                        $(".select .t1 ul").hide();
+                    }
+                })
+
+                //
+            }
+        };
+
+		 this.message = function () {
+		  
+		html+='<div class="post" style="top:'+arr.top+'px; left:'+arr.left+'px; width:'+arr.width+'px;">';
+		html+='<div class="tit"><div class="close" onclick="closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:'+(arr.width-26)+'px">'+arr.title+'</div><div class="titr"></div></div>';
+		html+='<div class="content">';
+		html+='<table width="100%" height="100" border="0" cellpadding="0" cellspacing="0">';
+		html+='<tr>';
+		html+='<td width="10" class="conl"></td>';
+		html+='<td class="conc">';
+		html+=arr.formtitle;
+		html+='<table width="380" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">';   
+		html+='<tr><td height="60" colspan="3" align="center"><input name="" type="image" onclick="closediv(\'post\');" src="images/post/sub.png" /></td></tr>';
+		html+='</table></td>';
+		html+='<td width="10" class="conr"></td>';
+		html+='</tr>';
+		html+='</table>';
+		html+='</div>';
+		html+='<div class="foot"><div class="footl"></div><div class="footc" style="width:'+(arr.width-26)+'px"></div><div class="footr"></div></div></div>';
+        $("body").append(html);
+		$("body").append('<div class="allpost"></div>');
+		if(arr.center){
+		sleft=(($(window).width()-arr.width)/2);
+		sstop=(($(window).height()-$(".post").height())/2);
+		$(".post").css({'left':sleft,'top':sstop});
+			
+			}
+			
+		
+        };
+		
+		this.subdiy = function () {
+		  
+		html+='<div class="post" style="top:'+arr.top+'px; left:'+arr.left+'px; width:'+arr.width+'px;">';
+		html+='<div class="tit"><div class="close" onclick="closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:'+(arr.width-26)+'px">'+arr.title+'</div><div class="titr"></div></div>';
+		html+='<div class="content">';
+		html+='<form action="'+arr.url+'" method="post" id="postform"><table width="100%" height="100" border="0" cellpadding="0" cellspacing="0">';
+		html+='<tr>';
+		html+='<td width="10" class="conl"></td>';
+		html+='<td class="conc">';
+		html+='<table width="380" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">';   
+		html+='<tr><td align="center">'+arr.form+'</td></tr>';
+		html+='<tr><td height="60"  align="center"><div style="width:450px;" class="ma"><div class="bottom l"  onclick="closediv(\'post\');" >取消</div><div class="r"><input onclick="closediv(\'post\');"  name="" type="image" src="images/post/sub.png" /></div></div></td></tr>';
+		html+='</table></td>';
+		html+='<td width="10" class="conr"></td>';
+		html+='</tr>';
+		html+='</table></form>';
+		html+='</div>';
+		html+='<div class="foot"><div class="footl"></div><div class="footc" style="width:'+(arr.width-26)+'px"></div><div class="footr"></div></div></div>';
+        $("body").append(html);
+		$("body").append('<div class="allpost"></div>');
+		$(".xzadd").click(function(){
+				$(".xzadd").attr('src','images/info/row.png');
+				$(this).attr('src','images/info/row1.png');
+				$(this).parent().find('input').attr('checked','checked');
+				
+		})
+		$(".i2tts .c").click(function(){
+		if($(this).parent().find('input').eq(0).attr("checked")){
+			$(this).parent().find("img").attr("src","images/info/checkbox1.png");
+			$(this).parent().find("input").attr("checked",false);
+			}else{
+		$(this).parent().find("img").attr("src","images/info/checkbox2.png");
+		$(this).parent().find("input").attr("checked","checked");
+			}
+								   });
+		if(arr.center){
+		sleft=(($(window).width()-arr.width)/2);
+		sstop=(($(window).height()-$(".post").height())/2);
+		$(".post").css({'left':sleft,'top':sstop});
+			
+			}
+			
+		
+        };
+		
+		this.subdiy2 = function () {
+		  
+		html+='<div class="post" style="top:'+arr.top+'px; left:'+arr.left+'px; width:'+arr.width+'px;">';
+		html+='<div class="tit"><div class="close" onclick="closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:'+(arr.width-26)+'px">'+arr.title+'</div><div class="titr"></div></div>';
+		html+='<div class="content">';
+		html+='<form action="'+arr.url+'" method="post" id="postform"><table width="100%" height="100" border="0" cellpadding="0" cellspacing="0">';
+		html+='<tr>';
+		html+='<td width="10" class="conl"></td>';
+		html+='<td class="conc">';
+		html+='<table width="380" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">';   
+		html+='<tr><td align="center">'+arr.form+'</td></tr>';
+		html+='<tr><td height="60"  align="center"><div style="width:450px;" class="ma"><div class="r"></div></div></td></tr>';
+		html+='</table></td>';
+		html+='<td width="10" class="conr"></td>';
+		html+='</tr>';
+		html+='</table></form>';
+		html+='</div>';
+		html+='<div class="foot"><div class="footl"></div><div class="footc" style="width:'+(arr.width-26)+'px"></div><div class="footr"></div></div></div>';
+        $("body").append(html);
+		$("body").append('<div class="allpost"></div>');
+		
+		if(arr.center){
+		sleft=(($(window).width()-arr.width)/2);
+		sstop=(($(window).height()-$(".post").height())/2);
+		$(".post").css({'left':sleft,'top':sstop});
+			
+			}
+			
+		
+        };
+		
+		
+		this.message1 = function () {
+		  
+		html+='<div class="post" style="top:'+arr.top+'px; left:'+arr.left+'px; width:'+arr.width+'px;">';
+		html+='<div class="tit"><div class="close" onclick="closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:'+(arr.width-26)+'px">'+arr.title+'</div><div class="titr"></div></div>';
+		html+='<div class="content">';
+		html+='<table width="100%" height="100" border="0" cellpadding="0" cellspacing="0">';
+		html+='<tr>';
+		html+='<td width="10" class="conl"></td>';
+		html+='<td class="conc">';
+		html+='<table width="380" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">';   
+		html+='<tr><td height="260" colspan="3" align="center">';
+		$.each(arr.form,function(aa,bb){
+		html+='<div class="bottom jjbot" onclick="geturl(\''+arr.url+"?id="+bb.id+"&name="+bb.name+'\')">'+bb.name+'</div>';
+			
+			});
+				
+		html+='</td></tr>';
+		html+='</table></td>';
+		html+='<td width="10" class="conr"></td>';
+		html+='</tr>';
+		html+='</table>';
+		html+='</div>';
+		html+='<div class="foot"><div class="footl"></div><div class="footc" style="width:'+(arr.width-26)+'px"></div><div class="footr"></div></div></div>';
+        $("body").append(html);
+		$("body").append('<div class="allpost"></div>');
+		
+		if(arr.center){
+		sleft=(($(window).width()-arr.width)/2);
+		sstop=(($(window).height()-$(".post").height())/2);
+		$(".post").css({'left':sleft,'top':sstop});
+			
+			}
+			
+		
+        };
+		
+		this.show1 = function () {
+			 $.each(arr.form,function(index,bc){
+				if(index==0){
+					  injson+=bc.input;
+					}else{
+					  injson+=','+bc.input;
+						}
+		html2+='<tr><td width="80" height="42" align="center" class="i2tts"><input name="name" type="radio" value="1" class="hide" /><input name="id[]" type="checkbox" value="1" class="dei" /><img src="images/info/checkbox1.png"   class="c" /></td><td width="120" align="left">'+bc.name+'</td><td width="204"><div class="input1"><input name="'+bc.input+'" type="text" value="'+bc.val+'" id="eamil'+index+'" onBlur="test(\'eamil'+index+'\',\'jpsrf\');" onfocus="test(\'eamil'+index+'\',\'jpsrf\');" /></div></td></tr>';
+		  });
+		  
+		html+='<div class="post" style="top:'+arr.top+'px; left:'+arr.left+'px; width:'+arr.width+'px;">';
+		html+='<div class="tit"><div class="close" onclick="javascript:closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:'+(arr.width-26)+'px">'+arr.title+'</div><div class="titr"></div></div>';
+		html+='<div class="content">';
+		html+='<table width="100%" height="100" border="0" cellpadding="0" cellspacing="0">';
+		html+='<tr>';
+		html+='<td width="10" class="conl"></td>';
+		html+='<td class="conc">';
+		html+=arr.formtitle;
+		html+='<form id="formUpdate" json="'+injson+'" action="'+arr.suburl+'" onsubmit="return submitform();" target="_self"><input name="id" type="hidden" value="'+arr.id+'" />';
+		html+='<table width="380" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">';   
+		html+=html2
+		html+='<tr><td height="60" colspan="3" align="center"><input name="" type="image" src="images/post/sub.png" /></td></tr>';
+		html+='</table></form></td>';
+		html+='<td width="10" class="conr"></td>';
+		html+='</tr>';
+		html+='</table>';
+		html+='</div>';
+		html+='<div class="foot"><div class="footl"></div><div class="footc" style="width:'+(arr.width-26)+'px"></div><div class="footr"></div></div></div>';
+        $("body").append(html);
+		$("body").append('<div class="allpost"></div>');
+		
+		$(".i2tts .c").click(function(){
+		if($(this).parent().find('input').eq(0).attr("checked")){
+			$(this).parent().find("img").attr("src","images/info/checkbox1.png");
+			$(this).parent().find("input").attr("checked",false);
+			}else{
+		$(this).parent().find("img").attr("src","images/info/checkbox2.png");
+		$(this).parent().find("input").attr("checked","checked");
+			}
+								   });
+		
+		if(arr.center){
+		sleft=(($(window).width()-arr.width)/2);
+		sstop=(($(window).height()-$(".post").height())/2);
+		$(".post").css({'left':sleft,'top':sstop});
+			
+			}
+			
+		
+        };
+		
+		
+		this.show2 = function () {
+			 $.each(arr.form,function(index,bc){
+				if(index==0){
+					  injson+=bc.input;
+					}else{
+					  injson+=','+bc.input;
+						}
+				option=bc.option;
+				option=option.split('|');
+		html2+='<tr><td width="80" height="60" align="left">'+bc.name+':</td><td width="500"><ul class="select"><li class="t1"><input name="'+bc.input+'" type="hidden" value="'+bc.val+'" /><a href="#">'+bc.val+'</a><div class="clear"></div><ul>';
+$.each(option,function(index1,bc1){
+html2+='<li class="t2">'+bc1+'';
+});
+html2+='</li></ul></li></ul></td></tr>';
+		  });
+		
+		html+='<div class="post" style="top:'+arr.top+'px; left:'+arr.left+'px; width:'+arr.width+'px;">';
+		html+='<div class="tit"><div class="close" onclick="javascript:closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:'+(arr.width-26)+'px">'+arr.title+'</div><div class="titr"></div></div>';
+		html+='<div class="content">';
+		html+='<table width="100%"  border="0" cellpadding="0" cellspacing="0" >';
+		html+='<tr>';
+		html+='<td width="10" class="conl"></td>';
+		html+='<td class="conc">';
+		html+=arr.formtitle;
+		html+='<form id="formUpdate" json="'+injson+'" action="'+arr.suburl+'" onsubmit="return submitform();" target="_self"><input name="id" type="hidden" value="'+arr.id+'" />';
+		html+='<table width="700" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">'; 
+		html+='<tr><td height="30" colspan="3" align="center">&nbsp;</td></tr>';  
+		html+=html2
+		html+='<tr><td height="30" colspan="3" align="center">&nbsp;</td></tr>';  
+		html+='<tr><td height="60" colspan="3" align="center"><div class="bottom fyh l" onclick="getform(\''+arr.opensuburl+'\',\''+arr.id+'\');">开  锁</div><div class="bottom fyh l"  onclick="getform(\''+arr.emptysuburl+'\',\''+arr.id+'\');">清空箱体</div><div class="l ml8" onclick="closediv(\'post\')"><input name="" type="image" src="images/post/sub.png" /></div><div class="bottom fyh l" onclick="closediv(\'post\');">返 回</div></td></tr>';
+		html+='</table></form></td>';
+		html+='<td width="10" class="conr"></td>';
+		html+='</tr>';
+		html+='</table>';
+		html+='</div>';
+		html+='<div class="foot"><div class="footl"></div><div class="footc" style="width:'+(arr.width-26)+'px"></div><div class="footr"></div></div></div>';
+        $("body").append(html);
+		$("body").append('<div class="allpost"></div>');
+		//alert(html);
+		
+		if(arr.center){
+		sleft=(($(window).width()-arr.width)/2);
+		sstop=(($(window).height()-$(".post").height())/2);
+		$(".post").css({'left':sleft,'top':sstop});
+		//绑定事件
+		$(".select .t1 a").click(function(){
+		 $(".select .t1  ul").hide();
+		  if($(this).parent().find('ul').is(":hidden")){
+			  $(this).parent().find('ul').show();	
+			 // alert(1);
+			  }else{
+				  $(this).parent().find('ul').hide();	
+				  }
+		  
+		   $(".select").css({'z-index':9998});
+		   $(this).parent().parent().css({'z-index':9999});
+		  
+		  return false;  
+		});
+	
+	  $(".select .t2").click(function(){
+		  txt=$(this).text();
+		  $(this).parent().parent().find('a').text(txt);	
+		  $(this).parent().parent().find('input').val(txt);	
+		  $(this).parent().find('ul').show();	  
+		    	
+	  });  
+		 $(document).mouseup(function(event){ if($(event.target).parents(".select").length==0){ $(".select .t1 ul").hide(); } })   	
+
+		//
+			
+			}
+			
+		
+        };
+		
+		this.show4 = function () {
+			var i=0;
+			 $.each(arr.form,function(index,bc){
+				 
+				if(index==0){
+					  injson+=bc.input;
+					}else{
+					  injson+=','+bc.input;
+						}
+						i++;
+						//alert(i);
+						
+		html23+='<td height="60" width="200" align="right" >'+bc.name+'&nbsp;</td><td><div class="input1 l"><input name="'+bc.input+'" type="text" value="'+bc.val+'" /></div></td>';
+		if(i==2){
+		i=0;
+		html2+='<tr>'+html23+'</tr>';
+		html23="";
+		//alert(html2);
+			}
+				
+			 
+		  });
+		 
+		html+='<div class="post" style="top:'+arr.top+'px; left:'+arr.left+'px; width:'+arr.width+'px;">';
+		html+='<div class="tit"><div class="close" onclick="javascript:closediv(\'post\');"></div><div class="titl"></div><div class="titc" style="width:'+(arr.width-26)+'px">'+arr.title+'</div><div class="titr"></div></div>';
+		html+='<div class="content">';
+		html+='<table width="100%" height="100" border="0" cellpadding="0" cellspacing="0">';
+		html+='<tr>';
+		html+='<td width="10" class="conl"></td>';
+		html+='<td class="conc">';
+		html+=arr.formtitle;
+		html+='<form id="formUpdate" json="'+injson+'" action="'+arr.suburl+'" onsubmit="return submitform();" target="_self"><input name="id" type="hidden" value="'+arr.id+'" />';
+		html+='<table width="700" border="0" align="center"  class="fyh f20" cellpadding="0" cellspacing="0">';   
+		html+=html2
+		html+='<tr><td height="60" colspan="4"  align="center"><input name="" type="image" src="images/post/sub.png" /></td></tr>';
+		html+='</table></form></td>';
+		html+='<td width="10" class="conr"></td>';
+		html+='</tr>';
+		html+='</table>';
+		html+='</div>';
+		html+='<div class="foot"><div class="footl"></div><div class="footc" style="width:'+(arr.width-26)+'px"></div><div class="footr"></div></div></div>';
+        $("body").append(html);
+		$("body").append('<div class="allpost"></div>');
+		
+		if(arr.center){
+		sleft=(($(window).width()-arr.width)/2);
+		sstop=(($(window).height()-$(".post").height())/2);
+		$(".post").css({'left':sleft,'top':sstop});
+			
+			}
+			
+		
+        };
+		
+		
+    };
+	
+})(jQuery);
+
+
+var closeWin = function(clazzName, waitTime){
+	$("." + clazzName).fadeOut(waitTime || 0, function(){
+		$(this).remove();
+	});
+	$(".allpost").remove();
+}
+
+function closediv(vid){
+	$("."+vid).remove();
+	$(".allpost").remove();
+	}
+function closediv1(vid){
+	$("."+vid).remove();
+	}
+function vode(){
+	return false;
+	}
+
+
+function submitform(){
+	mds=$("#formUpdate").attr("json");
+	suburl=$("#formUpdate").attr("action");
+	var strs = new Array();
+	if(mds != null){
+    strs = mds.split(",");
+   $.each(strs, function (index, tx) { 
+   ddd=tx; 
+   });
+	}
+    $.ajax({
+	type:'post',
+	url:suburl,
+	cache:false,
+	data:$("#formUpdate").serialize(),
+	dataType:'html',
+	success:function(msg1){
+		//alert(msg1);
+	location.reload();
+	},error:function(){//alert("error");
+	}
+
+
+	})
+   
+	//alert($("#formUpdate").html());
+	return false;
+	
+}
+
+
+function getform(suburl1, getid) {
+	alert(suburl1+'----'+getid);
+    $.ajax({
+        type: 'get',
+        url: suburl1,
+        cache: false,
+        data: {
+            id: getid
+        },
+        dataType: 'html',
+        success: function(msg1) {
+            //alert(msg1);
+            location.reload();
+
+        },
+        error: function() {
+            //alert("error");
+        }
+    });
+}
+
+function getform_c(suburl1, getid) {
+	window.location.href=suburl1;
+}
+
+function geturlmr(suburl1s,getids){
+$.ajax({
+type:'get',url:suburl1s,cache:false,data:{id:getids},dataType:'html',success:function(msg1){
+},error:function(){
+//alert("error");
+}});
+}
+
+function geturl(url){
+window.location.href=url; 
+	
+	}
+
+
+function ms(mtit,con){
+a = new $.pos({
+			title: mtit,
+			width:500,center:true,top:20,left:30,//center：true 左右上下居中、false自定义top,left。
+			formtitle:'<div class="con_con"><br>'+con+'</div>'
+			});
+	a.message();
+	}
+
+function test(inid,inshowid){
+VirtualKeyboard.toggle(inid,inshowid);
+$("#kb_langselector,#kb_mappingselector,#copyrights").css("display", "none");
+}
+
+function test1(inid,inshowid){
+VirtualKeyboard.toggle(inid, inshowid);
+$("#kb_langselector,#kb_mappingselector,#copyrights").css("display", "none");
+}
+
+function zzsz(sthis){
+htmlsz='<div class="xnszjp" id="xnszjp"><ul><li class="s">1</li><li class="s">2</li><li class="s">3</li><li class="s">4</li><li class="s">5</li><li class="s">6</li><li class="s">7</li><li class="s">8</li><li class="s">9</li><li class="s">*</li><li class="s">0</li><li class="s">#</li><li  onclick="closediv1(\'xnszjp\')"><img src="images/post/a1.png"  />&nbsp;</li><li class="wc" onclick="closediv1(\'xnszjp\')">Enter</li><li class="j"><img src="images/post/a2.png" />&nbsp;</li></ul></div>';
+	$(".info_all").append(htmlsz);
+	//$(sthis).parent().append(htmlsz);
+	
+	var objoffset = $(sthis).offset();
+	var objoffset1 = $(sthis).parent().offset();
+
+	$(".xnszjp").css("left",objoffset1.left) ;
+	$(".xnszjp").css("top",objoffset.top+$(sthis).height()+11) ;
+
+	$(".xnszjp .s").click(function(){
+		$(sthis).val($(sthis).val()+$(this).text());					
+	});	
+	
+	$(".xnszjp .j").click(function(){
+		var s=$(sthis).val();
+		//event.keycode(8);
+		s=s.substring(0,s.length-1);
+		$(sthis).val(s);	
+	});
+
+}
+

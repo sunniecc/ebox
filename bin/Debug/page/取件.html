@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>派宝箱</title>
+    <link href="css.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/web.js"></script>
+	<link href="js/swf.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+<embed src="mp3/请输入您的手机号码和验证码.mp3" autostart="true" hidden="true" loop="false">
+    <div class="w1024 info_all">
+        <div class="w1024 info_t">
+            <img src="images/info/logo.png" />
+        </div>
+        <div class="info8_c">
+            <div class="fyh f20 f_f t_c tit">
+                請輸入驗證碼或扫描二维码提取您的包裹</div>
+			<div class="ma mt25" style="width: 400px;">
+                <div class="input3 img_2">
+                    &nbsp;&nbsp;<input name="" onfocus="zzsz(this);if(this.value=='請輸入手機號码')this.value='';"
+                        type="text" value="請輸入手機號码" id="txt_tel" mr="請輸入手機號码" />&nbsp;&nbsp;<img src="images/info/inputxx.png" class="cur" />&nbsp;&nbsp;</div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="ma mt20" style="width: 400px;">
+                <div class="input3 img_2">
+                    &nbsp;&nbsp;<input name="" onfocus="zzsz(this);if(this.value=='請輸入驗證碼')this.value='';"
+                        type="text" id="txt_yzm" value="請輸入驗證碼" mr="請輸入驗證碼" />&nbsp;&nbsp;<img src="images/info/inputxx.png"
+                            class="cur" />&nbsp;&nbsp;</div>
+            </div>
+			<div class="clear">
+            </div>
+            <div class="ma mt20" style="width: 400px;" >
+                <div class="img_2" >
+				
+                    <div id="openSannerPort" class="bottomlong fyh  l" style="width: 400px;" >扫描二维码取件</div>
+				</div>
+            </div>
+			<div class="clear">
+            </div>
+        </div>
+		
+        <div style="width: 320px; margin: auto;margin-top:30px;">
+            <div onclick="geturl('index.html');" class="bottom fyh  l">
+                返 回</div>
+            <div id="btnOk" style="margin-left: 8px;" class="bottom fyh  l">
+                确定</div>
+        </div>
+        <div class="w1024 info_f fyh">
+            pakpobox v1.0
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$("#openSannerPort").focus(function(){
+                $('embed').remove();  
+                $('body').append('<embed src="mp3/请打开您的二维码，并将其放于扫描窗口前.mp3" autostart="true" hidden="true" loop="false">');
+            });
+	$(function(){
+		$(".input3 img").click(function(){
+			var mr=$(this).parent().find('input').attr('mr');
+			$(this).parent().find('input').val(mr);
+		});
+	});
+        $(function () {
+            $("#btnOk").click(function () {
+				if($.trim($('#txt_tel').val())=='請輸入手機號码'||$.trim($('#txt_tel').val())==''){
+					ms('系統提示',"請輸入手機號");
+					return;
+				}
+				if($.trim($('#txt_yzm').val())=='請輸入驗證碼'||$.trim($('#txt_yzm').val())==''){
+					ms('系統提示',"請輸入驗證碼");
+					return;
+				}
+                submitQuJIan();
+            });
+			$("#openSannerPort").click(function(){
+				ebox.InitBarCodeScannerToRead();
+			});
+        });
+		function OnCodeScan(code)
+		{
+			var data = json(ebox.validateQRCode(code));
+			if(null == data || data == '{}'){
+				ms('系統提示','讀取二維碼錯誤，請更換手機號及驗證碼再試');
+				return;
+			}
+			$('#txt_tel').val(data.eiTakeUserPhone);
+			$('#txt_yzm').val(data.eiValidateCode);
+			submitQuJIan();
+		}
+		
+		function submitQuJIan(){
+			var r = json(ebox.CustQuJian($('#txt_tel').val(), $('#txt_yzm').val()));
+			if (r.success) {
+				if(r.status == '3'){
+					if (r.type == 1010) {
+						geturl('取件格口打开.html');
+					}else
+				    {
+						alert('走支付流程');
+					}
+				}else{
+					if (r.type == 1010) {
+						ms('系統提示','您的快件已逾期，请交纳逾期费用后再取件');
+						geturl('逾期快件交费.html');
+					}else
+					{
+						alert('走支付流程');
+					}
+				}
+				
+			}else {
+				ms('信息提示', '驗證失敗，請重試');
+                $('embed').remove();  
+			}
+		}
+        function toUrl(i) {
+            if (i == true) {
+                var r = eval('(' + ebox.QuJian($('#txt_tel').val(), $('#txt_yzm').val()) + ')');
+                if (r.success)
+                    geturl('协议-c.html');
+                else {
+                    alert(r.msg);
+                }
+            }
+            else
+                geturl('取件格口打开.html');
+        }
+
+        function BoxClosed(id) {
+            alert(id);
+        }
+    </script>
+</html>

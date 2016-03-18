@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+
+<title>派宝箱</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+<script type="text/javascript" src="js/delay.js"></script>
+</head>
+<body>
+
+<div class="w1024 info_all">
+	<div class="w1024 info_t">
+		<img src="images/info/logo.png"/>
+	</div>
+  <div class="info3_c">
+		<div class="info">
+       	  <div class="Photo img_1">&nbsp;<img src="images/info/pic.png" height="140" style="vertical-align:middle;"/></div>
+            <div class="fyh f_f txt"> <table width="551" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="107" height="35" align="right">姓名：</td>
+    <td width="312" align="left" id="adminname"></td>
+    <td width="132" align="left">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="35" align="right">手机号码：<br /></td>
+   <td align="left" id="adminphone"></td>
+    <td align="left"></td>
+  </tr>
+  <tr>
+    <td height="35" align="right">隶属单位：</td>
+	<td align="left" id="adminunit"></td>
+    <td align="left">&nbsp;</td>
+  </tr>
+</table>
+</div>
+</div>
+<ul class="loginsub">
+	<li id="ebox1" style="display:none;"><img src="images/info/g1.png" onclick="geturl('系统信息.html')"/></li>
+    <li id="ebox2" style="display:none;"><img src="images/info/g2.png" onclick="geturl('格口管理.html')"/></li>
+    <li id="ebox3" style="display:none;"><img src="images/info/g3.png" onclick="geturl('取逾期件.html')"/></li>
+    <li id="ebox4" style="display:none; margin-right:0px;"><img src="images/info/g4.png" onclick="geturl('取异常件.html')"/></li>
+    <li id="ebox5" style="display:none;"><a href="#" onfocus="this.blur()" style="outline:none;text-decoration:none;"><img onclick="geturl('取寄件.html');" src="images/info/g7.png"></a></li>
+    <li style="display:block;"><img src="images/info/g5.png" onclick="geturl('index.html')"/></li>
+    <li id="ebox7" style="display:none;"><img src="images/info/g6.png" onclick="projectExit();"/></li>
+</ul>
+  </div>
+  <div class="clear"></div>
+    <div class="w1024 info_f fyh" >
+		pakpobox v1.0
+	</div>
+</div>
+</body>
+
+<script type="text/javascript">
+//<embed src="mp3/请选择操作选项.mp3" autostart="true" hidden="true" loop="false">
+ebox.SetBizCode('EBOX2035');
+$(window).load(function() {
+    $(this).doTimeout('EBOX2035', lazyTime, function() {
+		loadAdminInfo();
+	});
+});
+function loadAdminInfo(){
+	var v = json(ebox.GetUiData()).UserInfo;
+	var authz = v.terminalFunction;
+	if(null == authz || authz == undefined ){
+		ms('系統提示','系統未授權');
+		return;
+	}
+	$("#adminname").text(v.userInfo.uiLoginName);
+	$("#adminphone").text(v.userInfo.uiUserPhone);
+	$("#adminunit").text(v.userInfo.uiDeptName);
+	for(var i=0;i<authz.length;i++){
+		$("#ebox"+authz[i].tfFuncNo).show();
+	}
+	var cnt = json(ebox.openStoreExpress());
+	if(cnt.custExpress > 0){
+		$("#ebox5").append("<span>"+cnt.custExpress+"</span>");
+	}
+	if(cnt.overtimeExpress > 0){
+		$("#ebox3").append("<span>"+cnt.overtimeExpress+"</span>");
+	}
+	if(cnt.exceptionExpress > 0){
+		$("#ebox4").append("<span>"+cnt.exceptionExpress+"</span>");
+	}
+}
+function projectExit(){
+	if(confirm('确认退出系统？')){
+		ebox.Exit();
+	}
+}
+</script>
+</html>

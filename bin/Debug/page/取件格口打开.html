@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>派宝箱</title>
+    <link href="css.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/web.js"></script>
+</head>
+<body>
+    <div class="w1024 info_all">
+        <div class="w1024 info_t">
+            <img src="images/info/logo.png" />
+        </div>
+        <div class="info15_c">
+            <div class="tit2 f40 f_b f_f">
+                欢迎使用派宝箱</div>
+            <div class="tit4">
+                <span id="door" class="f40 fyw f_b">
+                </span>&nbsp;&nbsp;&nbsp;号柜门已经打开，请取走包裹并关闭柜门</div>
+            <div class="cen">
+                <table width="523" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td style="line-height: 40px;">
+                            <img src="images/info/jj12bg.png" /><br />
+                            系统将在 <span class="time fyw f_b ">30</span> 秒后返回
+                        </td>
+                        <td class="t_l">&nbsp;
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bot">
+                <div class="botcc r" id="btnOk" style="float:left; margin-left:34%;">
+                    确认收货</div>
+            </div>
+        </div>
+        <div class="w1024 info_f fyh">
+            pakpobox v1.0
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+var w;
+        $(function () {
+            var door = json(ebox.GetUiData()).QuJianOrder.EILATTICENO;			 
+			$('embed').remove(); 
+                    $('body').append('<embed src="mp3/'+door+'号柜门已经打开，请取走您的包裹.mp3" autostart="true" hidden="true" loop="false">');
+			ebox.OpenBox();
+            $("#door").html(door);
+            $("#btnOk").click(function () {
+                ebox.closeExpress();
+                geturl('index.html');
+            });
+        });
+
+        function BoxClosed() {
+			geturl('index.html');
+        }
+
+ $(function timeget() {
+			w =new Worker("ebox.js");
+			w.onmessage = function(event){
+				var timetxt = event.data;
+				if(timetxt < 0 ){
+					w.terminate();
+					ebox.closeExpress();
+					geturl('index.html');
+					return false;
+				}
+
+				$("#time").html(timetxt);
+				if(timetxt == 24){
+					 $('body').append('<embed src="mp3/麻烦您关闭柜门，感谢您的使用.mp3" autostart="true" hidden="true" loop="false">');
+				}
+            $(".time").text(timetxt);
+			};
+   });
+   
+$(function(){
+ebox.StartCamera();
+t = setInterval(function() { 
+	timeget1();
+}, 1000);
+});
+var timetxt1 = 0;
+function timeget1(){
+	timetxt1++;
+	if(timetxt1==4){
+		clearInterval(t);
+		ebox.CloseCamera();
+		return false;
+	}
+	
+	ebox.Snapshot();
+}
+   function subjs() {
+            var a = new $.pos({
+                title: "请选择拒收原因",
+                width: 500, center: true, top: 20, left: 30,
+                url: '取件4-拒收重新放入格口.html',
+                form: [
+					 { "name": '不是我的快件', 'id': '2' },
+					 { "name": '快件破损', 'id': '1' },
+					 { "name": '快件不符', 'id': '3' },
+					 { "name": '其他', 'id': '4' }
+					 ]
+            });
+            a.message1();
+        }
+    </script>
+</html>

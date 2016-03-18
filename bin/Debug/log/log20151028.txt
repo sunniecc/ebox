@@ -1,0 +1,227 @@
+﻿[2015-10-28 16:36:17] 发送消息：{"action":"programOperation","type":"programLogin","parameter":{"ss":{"ssOpenName":"SYS","ssOpenUid":"","pbId":83,"pbCrtNo":"P2015100030","ssOpenTime":"2015-10-28 16:36:16"}}}
+[2015-10-28 16:36:28] 链接失败,稍后重试...
+
+==================================================
+[2015-10-28 16:36:28] 异常信息:
+由于目标计算机积极拒绝，无法连接。 127.0.0.1:9070
+引发方法：
+Void Connect(System.String, Int32)
+调用堆栈：
+   在 System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   在 EBoxClient.Utils.TcpWeightHelper.Connect() 位置 f:\阳光洗衣工程\EBoxClient\Utils\TcpWeightHelper.cs:行号 60
+
+==================================================
+
+[2015-10-28 16:36:28] 接收消息,消息头部：EB:81E{"action":"programOperation","returnValue":-1,"status":201,"type":"programLogin"}
+[2015-10-28 16:36:28] 接收消息：{"action":"programOperation","returnValue":-1,"status":201,"type":"programLogin"}
+[2015-10-28 16:36:29] 链接失败,稍后重试...
+
+==================================================
+[2015-10-28 16:36:29] 异常信息:
+由于目标计算机积极拒绝，无法连接。 127.0.0.1:9080
+引发方法：
+Void Connect(System.String, Int32)
+调用堆栈：
+   在 System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   在 EBoxClient.Utils.TcpOctopusCardHelper.Connect() 位置 f:\阳光洗衣工程\EBoxClient\Utils\TcpOctopusCardHelper.cs:行号 61
+
+==================================================
+
+[2015-10-28 16:36:29] 发送消息：{"action":"programOperation","type":"programLogin","parameter":{"ss":{"ssOpenName":"SYS","ssOpenUid":"","pbId":83,"pbCrtNo":"P2015100030","ssOpenTime":"2015-10-28 16:36:29"}}}
+[2015-10-28 16:36:29] 接收消息,消息头部：EB:81E{"action":"programOperation","returnValue":-1,"status":201,"type":"programLogin"}
+[2015-10-28 16:36:29] 接收消息：{"action":"programOperation","returnValue":-1,"status":201,"type":"programLogin"}
+[2015-10-28 16:36:29] 身份证设备端口打开失败
+[2015-10-28 16:36:29] 打开扫描枪串口失败
+
+==================================================
+[2015-10-28 16:36:29] 异常信息:
+端口“COM5”不存在。
+引发方法：
+Void WinIOError(Int32, System.String)
+调用堆栈：
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 EBoxClient.Device.BarCodeScanner.Init() 位置 f:\阳光洗衣工程\EBoxClient\Device\BarCodeScanner.cs:行号 36
+
+==================================================
+
+[2015-10-28 16:36:29] 电子锁串口打开失败
+[2015-10-28 16:36:47] 关闭摄像头。。。
+[2015-10-28 16:36:47] 发送消息：{"action":"programOperation","type":"programExit","parameter":{"ss":{"ssOpenName":"SYS","pbId":"83","ssId":"1","pbCrtNo":"P2015100030","ssCloseTime":"2015-10-28 16:36:47","ssCloseInstructions":""}}}
+[2015-10-28 16:36:48] 接收消息,消息头部：EB:80E{"action":"programOperation","returnValue":-1,"status":201,"type":"programExit"}
+[2015-10-28 16:36:48] 接收消息：{"action":"programOperation","returnValue":-1,"status":201,"type":"programExit"}
+[2015-10-28 16:38:21] 发送消息：{"action":"programOperation","type":"programLogin","parameter":{"ss":{"ssOpenName":"SYS","ssOpenUid":"","pbId":83,"pbCrtNo":"P2015100030","ssOpenTime":"2015-10-28 16:38:20"}}}
+[2015-10-28 16:38:31] 发送消息：{"action":"programOperation","type":"programLogin","parameter":{"ss":{"ssOpenName":"SYS","ssOpenUid":"","pbId":83,"pbCrtNo":"P2015100030","ssOpenTime":"2015-10-28 16:38:31"}}}
+[2015-10-28 16:38:32] 接收消息,消息头部：EB:81E{"action":"programOperation","returnValue":-1,"status":201,"type":"programLogin"}EB:81E{"actio
+[2015-10-28 16:38:32] 接收消息：{"action":"programOperation","returnValue":-1,"status":201,"type":"programLogin"}
+[2015-10-28 16:38:32] 接收消息,消息头部：EB:81E{"action":"programOperation","returnValue":-1,"status":201,"type":"programLogin"}
+[2015-10-28 16:38:32] 接收消息：{"action":"programOperation","returnValue":-1,"status":201,"type":"programLogin"}
+[2015-10-28 16:38:32] 身份证设备端口打开失败
+[2015-10-28 16:38:32] 打开扫描枪串口失败
+
+==================================================
+[2015-10-28 16:38:32] 异常信息:
+端口“COM5”不存在。
+引发方法：
+Void WinIOError(Int32, System.String)
+调用堆栈：
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 EBoxClient.Device.BarCodeScanner.Init() 位置 f:\阳光洗衣工程\EBoxClient\Device\BarCodeScanner.cs:行号 36
+
+==================================================
+
+[2015-10-28 16:38:32] 电子锁串口打开失败
+[2015-10-28 16:38:43] 发送消息：{"action":"courier","type":"courierLogin","parameter":{"ui":{"uiUserPhone":"13924296474","uiLoginPassword":"888888","uiUserType":"4"}}}
+[2015-10-28 16:38:44] 接收消息,消息头部：EB:702E{"action":"courier","returnValue":{"userAccount":{"uaCompanyActMoney":181.5,"uaCurrActGif":0,
+[2015-10-28 16:38:44] 接收消息：{"action":"courier","returnValue":{"userAccount":{"uaCompanyActMoney":181.5,"uaCurrActGif":0,"uaCurrActMoney":0,"uaId":69,"uaTotalActGif":0,"uaTotalActMoney":0,"uaTotalMoney":0,"uaType":2,"uaUserActNo":"UA2014100093","uaUserId":87,"uaUserIdCode":"440181198810053932","uaUserIdType":1,"uaUserName":"陈国宝"},"userInfo":{"onelevelorgid":26,"onelevelorgname":"广州顺丰","tfBuzStatus":1,"tfDeleteFlag":0,"uiDeptId":26,"uiDeptName":"广州顺丰","uiId":87,"uiLoginName":"13924296474","uiLoginPassword":"ISGMyneATSuhkiwz4BURBQ","uiUserId":46,"uiUserIdCode":"440181198810053932","uiUserIdType":1,"uiUserName":"陈国宝","uiUserPhone":"13924296474","uiUserType":4}},"status":201,"type":"courierLogin"}
+[2015-10-28 16:38:59] 发送消息：{"action":"adminOperation","type":"adminLogin","parameter":{"ui":{"uiUserIdCode":"93392126","uiLoginPassword":"93392126","uiUserType":"3"}}}
+[2015-10-28 16:39:00] 接收消息,消息头部：EB:701E{"action":"adminOperation","returnValue":{"terminalFunction":[{"tfFuncName":"广告模块","t
+[2015-10-28 16:39:00] 接收消息：{"action":"adminOperation","returnValue":{"terminalFunction":[{"tfFuncName":"广告模块","tfFuncNo":"1"},{"tfFuncName":"防水功能","tfFuncNo":"2"},{"tfFuncName":"温控设备","tfFuncNo":"3"},{"tfFuncName":"更改格口价格","tfFuncNo":"4"},{"tfFuncName":"UPS电源","tfFuncNo":"5"},{"tfFuncName":"管理格口","tfFuncNo":"6"},{"tfFuncName":"取逾期件","tfFuncNo":"7"}],"userInfo":{"tfBuzStatus":1,"tfDeleteFlag":0,"uiDeptId":26,"uiDeptName":"阳光洗衣","uiId":532,"uiLoginName":"93392126","uiLoginPassword":"1IlT0WaD31RXLG80HOf4CA","uiUserId":358,"uiUserIdCode":"40419999","uiUserIdType":1,"uiUserName":"Apple","uiUserPhone":"93392126","uiUserType":3}},"status":201,"type":"adminLogin"}
+[2015-10-28 16:39:02] 开始读取所有格口数据！
+[2015-10-28 16:39:02] 格口数据读取完成！
+[2015-10-28 16:39:08] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1
+[2015-10-28 16:39:08] 发送消息：{"Cmd":"0","Weight":"0.0","Reply":"0"}
+[2015-10-28 16:39:10] 发送消息：{"Cmd":"0","Weight":"0.0","Reply":"0"}
+
+==================================================
+[2015-10-28 16:39:10] 异常信息:
+正在中止线程。
+引发方法：
+Void .ctor(System.String)
+调用堆栈：
+   在 System.IO.StringReader..ctor(String s)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   在 EBoxClient.Utils.TcpWeightHelper.Read() 位置 f:\阳光洗衣工程\EBoxClient\Utils\TcpWeightHelper.cs:行号 121
+
+==================================================
+[2015-10-28 16:39:11] 没有找到任何视频输入设备
+[2015-10-28 16:39:11] 开启摄像头。。。
+[2015-10-28 16:39:12] 视频设备为初始化或者未启动
+[2015-10-28 16:39:13] 视频设备为初始化或者未启动
+[2015-10-28 16:39:14] 视频设备为初始化或者未启动
+[2015-10-28 16:39:15] 关闭摄像头。。。
+[2015-10-28 16:39:21] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1
+[2015-10-28 16:39:21] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1 and MO_TYPEID =4
+[2015-10-28 16:39:21] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1 and MO_TYPEID =4
+[2015-10-28 16:39:21] 发送消息：{"action":"mouthArk","type":"mouthArkUsed","parameter":{"mou":{"moPbId":"83","moNo":"1"}}}
+[2015-10-28 16:39:22] 接收消息,消息头部：EB:73E{"action":"mouthArk","returnValue":-1,"status":201,"type":"mouthArkUsed"}
+[2015-10-28 16:39:22] 接收消息：{"action":"mouthArk","returnValue":-1,"status":201,"type":"mouthArkUsed"}
+[2015-10-28 16:39:22] 没有读到数据
+
+==================================================
+[2015-10-28 16:39:22] 异常信息:
+未能找到路径“D:\Debug\TestTxt.txt”的一部分。
+引发方法：
+Void WinIOError(Int32, System.String)
+调用堆栈：
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path)
+   在 EBoxClient.FrmMain.Read() 位置 f:\阳光洗衣工程\EBoxClient\JiJian.cs:行号 901
+   在 EBoxClient.FrmMain.octopusCardCmd(String Cmd, String Lang, String Weight, String Machineid, String Lockerno, String Receiptno, String Phoneno, String Extratime, String Extratimecost, String Extraweight, String Extraweightcost, String Totalcost, String Reply, String OTime, String OCardNo, String OAmount) 位置 f:\阳光洗衣工程\EBoxClient\JiJian.cs:行号 846
+
+==================================================
+
+[2015-10-28 16:39:52] 没有找到任何视频输入设备
+[2015-10-28 16:39:52] 开启摄像头。。。
+[2015-10-28 16:39:53] 视频设备为初始化或者未启动
+[2015-10-28 16:39:54] 视频设备为初始化或者未启动
+[2015-10-28 16:39:55] 视频设备为初始化或者未启动
+[2015-10-28 16:39:56] 关闭摄像头。。。
+[2015-10-28 16:40:03] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1
+[2015-10-28 16:40:03] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1 and MO_TYPEID =4
+[2015-10-28 16:40:03] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1 and MO_TYPEID =4
+[2015-10-28 16:40:03] 发送消息：{"action":"mouthArk","type":"mouthArkUsed","parameter":{"mou":{"moPbId":"83","moNo":"1"}}}
+[2015-10-28 16:40:04] 接收消息,消息头部：EB:73E{"action":"mouthArk","returnValue":-1,"status":201,"type":"mouthArkUsed"}
+[2015-10-28 16:40:04] 接收消息：{"action":"mouthArk","returnValue":-1,"status":201,"type":"mouthArkUsed"}
+[2015-10-28 16:40:04] 没有读到数据
+
+==================================================
+[2015-10-28 16:40:04] 异常信息:
+未能找到路径“D:\Debug\TestTxt.txt”的一部分。
+引发方法：
+Void WinIOError(Int32, System.String)
+调用堆栈：
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path)
+   在 EBoxClient.FrmMain.Read() 位置 f:\阳光洗衣工程\EBoxClient\JiJian.cs:行号 901
+   在 EBoxClient.FrmMain.octopusCardCmd(String Cmd, String Lang, String Weight, String Machineid, String Lockerno, String Receiptno, String Phoneno, String Extratime, String Extratimecost, String Extraweight, String Extraweightcost, String Totalcost, String Reply, String OTime, String OCardNo, String OAmount) 位置 f:\阳光洗衣工程\EBoxClient\JiJian.cs:行号 846
+
+==================================================
+
+[2015-10-28 16:41:51] 发送消息：{"action":"programOperation","type":"heartbeat","parameter":{"heartbeat":0,"ss":{"pbId":"83","pbCrtNo":"P2015100030"}}}
+[2015-10-28 16:41:52] 接收消息,消息头部：EB:77E{"action":"programOperation","returnValue":0,"status":201,"type":"heartbeat"}
+[2015-10-28 16:41:52] 接收消息：{"action":"programOperation","returnValue":0,"status":201,"type":"heartbeat"}
+[2015-10-28 16:45:12] 发送消息：{"action":"programOperation","type":"heartbeat","parameter":{"heartbeat":1,"ss":{"pbId":"83","pbCrtNo":"P2015100030"}}}
+[2015-10-28 16:45:13] 接收消息,消息头部：EB:77E{"action":"programOperation","returnValue":1,"status":201,"type":"heartbeat"}
+[2015-10-28 16:45:13] 接收消息：{"action":"programOperation","returnValue":1,"status":201,"type":"heartbeat"}
+[2015-10-28 16:45:34] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1
+[2015-10-28 16:45:34] 发送消息：{"Cmd":"0","Weight":"0.0","Reply":"0"}
+
+==================================================
+[2015-10-28 16:45:34] 异常信息:
+正在中止线程。
+引发方法：
+Boolean IsAscii()
+调用堆栈：
+   在 System.String.IsAscii()
+   在 System.String.Equals(String a, String b, StringComparison comparisonType)
+   在 Newtonsoft.Json.Serialization.JsonPropertyCollection.GetProperty(String propertyName, StringComparison comparisonType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   在 EBoxClient.Utils.TcpWeightHelper.Read() 位置 f:\阳光洗衣工程\EBoxClient\Utils\TcpWeightHelper.cs:行号 121
+
+==================================================
+[2015-10-28 16:45:35] 没有找到任何视频输入设备
+[2015-10-28 16:45:35] 开启摄像头。。。
+[2015-10-28 16:45:36] 视频设备为初始化或者未启动
+[2015-10-28 16:45:37] 视频设备为初始化或者未启动
+[2015-10-28 16:45:38] 视频设备为初始化或者未启动
+[2015-10-28 16:45:39] 关闭摄像头。。。
+[2015-10-28 16:45:44] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1
+[2015-10-28 16:45:44] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1 and MO_TYPEID =4
+[2015-10-28 16:45:44] getEboxMouthArks= select ID,MO_PBID,MO_PBNO,MO_CSAID,MO_CSANO,MO_TYPEID,MO_LOCKNO,MO_FULLNO,MO_NO,MO_SCALE,MO_SIZE,MO_STANDFEE,TF_BUZSTATUS from EBOX_MOUTH_ARK where TF_DELETEFLAG =0 and TF_BUZSTATUS = 1 and MO_TYPEID =4
+[2015-10-28 16:45:44] 发送消息：{"action":"mouthArk","type":"mouthArkUsed","parameter":{"mou":{"moPbId":"83","moNo":"1"}}}
+[2015-10-28 16:45:45] 接收消息,消息头部：EB:73E{"action":"mouthArk","returnValue":-1,"status":201,"type":"mouthArkUsed"}
+[2015-10-28 16:45:45] 接收消息：{"action":"mouthArk","returnValue":-1,"status":201,"type":"mouthArkUsed"}
+[2015-10-28 16:45:45] 没有读到数据
+
+==================================================
+[2015-10-28 16:45:45] 异常信息:
+未能找到路径“D:\Debug\TestTxt.txt”的一部分。
+引发方法：
+Void WinIOError(Int32, System.String)
+调用堆栈：
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path)
+   在 EBoxClient.FrmMain.Read() 位置 f:\阳光洗衣工程\EBoxClient\JiJian.cs:行号 901
+   在 EBoxClient.FrmMain.octopusCardCmd(String Cmd, String Lang, String Weight, String Machineid, String Lockerno, String Receiptno, String Phoneno, String Extratime, String Extratimecost, String Extraweight, String Extraweightcost, String Totalcost, String Reply, String OTime, String OCardNo, String OAmount) 位置 f:\阳光洗衣工程\EBoxClient\JiJian.cs:行号 846
+
+==================================================
+
+[2015-10-28 16:48:33] 发送消息：{"action":"programOperation","type":"heartbeat","parameter":{"heartbeat":2,"ss":{"pbId":"83","pbCrtNo":"P2015100030"}}}
+[2015-10-28 16:48:34] 接收消息,消息头部：EB:77E{"action":"programOperation","returnValue":2,"status":201,"type":"heartbeat"}
+[2015-10-28 16:48:34] 接收消息：{"action":"programOperation","returnValue":2,"status":201,"type":"heartbeat"}
+[2015-10-28 16:51:01] 关闭摄像头。。。
+[2015-10-28 16:51:01] 发送消息：{"action":"programOperation","type":"programExit","parameter":{"ss":{"ssOpenName":"SYS","pbId":"83","ssId":"1","pbCrtNo":"P2015100030","ssCloseTime":"2015-10-28 16:51:01","ssCloseInstructions":""}}}
+[2015-10-28 16:51:01] 接收消息,消息头部：EB:80E{"action":"programOperation","returnValue":-1,"status":201,"type":"programExit"}
+[2015-10-28 16:51:01] 接收消息：{"action":"programOperation","returnValue":-1,"status":201,"type":"programExit"}

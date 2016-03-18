@@ -1,0 +1,1 @@
+EB:99E{"action":"fileTrans","type":"checkFile","parameter":{"fileMsg":{"path":"D:/2.rar","pboxId":"30"}}}

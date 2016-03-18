@@ -1,0 +1,2238 @@
+time:22:38:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:22:39:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:22:39:15System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:02:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:08System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:26System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:03:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:04:15System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:04:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:04:24System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:04:27System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:06:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:23System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:26System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:27System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:27System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:27System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:27System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:27System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:34System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:34System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:34System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:34System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:34System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:08:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:08System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:08System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:08System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:08System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:08System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:09System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:09System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:09System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:09System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:09System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:10System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:10System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:10System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:10System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:10System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:11System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:11System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:11System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:11System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:13System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:13System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:13System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:13System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:14System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:14System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:14System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:14System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:14System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:15System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:15System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:15System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:15System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:16System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:16System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:16System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:16System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:16System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:17System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:17System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:17System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:17System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:17System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:18System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:18System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:18System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:18System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:20System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:20System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:20System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:20System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:20System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:22System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:22System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:22System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:22System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:23System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:23System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:09:23System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:08System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:08System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:08System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:08System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:09System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:09System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:09System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:09System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:09System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:10System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:10System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:10System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:10System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:10System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:11System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:11System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:11System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:11System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:13System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:13System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:13System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:13System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:13System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:14System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:14System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:14System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:14System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:14System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:15System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:15System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:15System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:15System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:16System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:16System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:16System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:16System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:16System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:17System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:17System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:17System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:17System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:17System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:18System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:18System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:18System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:18System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:19System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:20System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:20System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:20System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:20System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:20System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:21System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:22System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:22System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:22System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:22System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:22System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:23System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:23System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:23System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:23System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:23System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:24System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:24System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:24System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:24System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:25System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:25System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:25System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:25System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:25System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:26System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:26System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:26System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:26System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:26System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:27System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:27System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:27System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:27System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:28System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:34System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:34System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:34System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:34System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:34System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:39System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:40System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:41System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:42System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:43System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:44System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:45System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:46System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:47System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:48System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:49System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:50System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:51System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:52System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:53System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:54System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:55System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:56System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:57System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:58System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:43:59System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:00System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:01System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:02System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:03System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:04System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:44:07System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:29System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:30System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:31System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:32System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:44:33System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:55:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:55:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:55:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:55:05System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:14:55:06System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:04:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:04:35System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:04:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:04:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:04:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:04:36System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:07:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:07:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:07:37System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:07:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:07:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:07:38System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:08:11System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:08:11System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:08:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)
+time:15:08:12System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 yodaCollection.pakpobox.WriteBit(Int64 Station, String PLC_ID, Int32 Value)

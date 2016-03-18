@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+
+  <style type="text/css">
+	html,body,dl,dt,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,p,fieldset,legend,span {padding:0;margin:0;list-style-type:none;}
+	#box {
+		height : 277px;
+		width  : 960px;
+		background: url(i/4-2.png) no-repeat;
+		padding-top : 26.5px;
+		margin: auto;
+		background-size:100% 100%;
+	}
+	
+	#box span {
+		
+		float:left;
+		margin-left  : 5.4px;
+		margin-right : 4.8px;
+	}
+
+	#box  span div{
+		height : 27px;
+		width  : 34px;
+		background: url(i/3.png) no-repeat;
+		margin-bottom : 3.4px;
+	}
+
+	#spanLy {
+		height : 277px;
+		width : 60px;
+		margin-left  : 0px;
+		margin-right : 0px;
+	}
+
+  </style>
+
+ </head>
+
+ <body>
+		<div>
+				
+		</div>
+		<div id = "box"> <!-- # 居中 子元素上下左右保持一定的间隔 -->
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span id = "spanLy"></span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+				<span><!-- # 向右保持一定距离 子元素 上保持距离-->
+					<div></div><!-- # 同辈元素之间向下保持一定距离 -->
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</span>
+		</div>
+		<div>
+			
+		</div>
+ </body>
+</html>

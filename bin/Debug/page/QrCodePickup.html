@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>派宝箱</title>
+  <link href="css.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/web.js"></script>
+  <script type="text/javascript" src="js/delay.js"></script>
+  <link href="js/swf.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+ .allback{
+  display:none;
+  align:center;
+ 
+  }
+  
+  .shade{
+  background:#000000;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  width:1024px;
+  height:768px;
+  filter:alpha(opacity=50); 
+  opacity:0.5;
+  }
+ 
+  .overtimepaymoney{
+  position:absolute;
+  left:0PX;
+  top:0px;
+  width:1024px;
+  height:768px;
+  display:none;
+
+  }
+  .phonehintbackground{
+  position:relative;
+  top:200px;
+  }
+  .pickuppaymoney{
+  align:center;
+  position:absolute;
+  top:50px;
+  height:343px;
+  width:1024px;
+  line-height:100px;
+  left: 0px;
+  }
+  .phonehintbtn{
+  position:absolute;
+  width:1024px;
+  left:1px;
+  top: 342px;
+  }
+ 	
+  .paymoneyhint{
+  position:absolute;
+  left:0PX;
+  top:0px;
+  width:1024px;
+  height:768px;
+  display:none;
+  }
+  .paymoneyback{
+  position:absolute;
+  width:1024px;
+  height:768px;
+  padding-top:375PX;
+  left: 4px;
+  top: -179px;
+  }
+ .paymoney{
+ text-align:left;
+  position:absolute;
+  top: 389px;
+  height:327px;
+  width:750px;
+  line-height:100px;
+  left: 138px;
+  }
+  .selectpaybutton{
+  position:absolute;
+  width:1024px ;
+  left: -5px;
+  top: 722px;
+  }
+  
+  .paysucceedhint{
+   position:absolute;
+  left:0PX;
+  top:0px;
+  width:1024px;
+  height:768px;
+  display:none;
+  }
+  #shadeHide{
+   display:none;
+  }
+
+  .showpaymoneyhint{
+  height:80px;
+  width:750px;
+  margin-top:5px;
+  
+  
+  }
+  .allhint{
+  
+   position:absolute;
+  left:0PX;
+  top:0px;
+  width:1024px;
+  height:768px;
+  display:none;
+  }
+  .inputpswerrorhint{
+   position:absolute;
+  left:0PX;
+  top:0px;
+  width:1024px;
+  height:768px;
+  display:none;
+ 
+  }
+  .againinputpswbutton{
+	position:absolute;
+	width:750px;
+	left: 0px;
+	top: 321px;   
+  }
+	
+</style>
+<body>
+<div style=" position:relative">
+<img src="images/imgs/EUI_2_01/allbg.png" no-repeat/>
+</div>
+<div style=" position:absolute; left:0px;top:0px; "> 
+  <div class="w1024 info_all">
+    <div class="info5_c" >
+				
+				<div align="left" style=" margin-left:30px;margin-top:30px">
+						<img id="TurnIndex" src="images/imgs/UI_2_01/UI_2-22.png"/>
+				</div>
+				<div style=" margin-top:-30px">
+						<img src="images/imgs/UI_3_01/UI_3_scanning.png" />
+						
+				</div>
+			
+		<!--磅洗或干洗按钮的-->
+	   <div align="center" style="margin-top:60px" >
+		     <div style="width:500px">
+						<!-- 磅洗-->
+				 <div class="img1"  style="float:left;" >
+				  <!--二维码取货返回按钮-->
+				        <img id="WashPage" src="images/imgs/UI_3_01/UI_3_return.png" />
+					   
+				 </div >
+				 
+				 <div class="img2" style="float:left; padding-left:60px;"  >
+				 <!-- 跳转到输入验证码界面-->
+					    <img id="PswPage" src="images/imgs/UI_3_01/UI_3_change1.png"/>
+						<input type="hidden" id="inputphone"/>
+				 </div >
+			 </div>
+	   </div>
+	</div>
+	 <!--模拟提示框--------------------------------------------------------------------------------->
+  <div class="allback">
+    <!--模拟透明隔板-->
+    <div class="shade"> </div>
+    <!--密码取衣超时付费提示信息--------------------------------------------------------------->
+    <div class="overtimepaymoney">
+		<div id="shadeHide">
+      <div class="phonehintbackground"> <img src="images/imgs/UI_2_01/UI_2_23.png"/>
+          <div class="pickuppaymoney">
+            <!--超时存衣-->
+            <div style=" width:530px; height:70px; margin-top:5px">
+              <div style="width:280px; float:left; padding-top:5px;" > <img src="images/imgs/UI_3_01/UI_3_overtimehint.png" /> </div>
+              <div style="width:210px; float:left; padding-left:30px;" align="left"> <span id="OvertimePyaMoney" style="font-size:50px; width:210px; text-align:left; height:60px;color:#99ca3b; line-height: 60px; ">0</span> </div>
+            </div>
+            <!--洗衣补钱-->
+            <div style=" width:505px; height:70px; margin-top:10px">
+              <div style="width:250px; float:left; padding-left:30px;  padding-top:5px;"> <img src="images/imgs/UI_3_01/UI_3_amountpay.png"/> </div>
+              <!--洗衣所需补钱的金额-->
+              <div style="width:210px; float:left;padding-left:15px;" align="left"> <span id="OtherPyaMoney" style="font-size:50px; width:210px;color:#99ca3b; text-align:left; height:60px; line-height: 60px; ">0</span> </div>
+            </div>
+            <!--总金额-->
+            <div style=" width:500px; height:70px; margin-top:10px">
+              <div style="width:220px; float:left; padding-left:70px; padding-top:5px;"> <img src="images/imgs/UI_3_01/UI_3_allpay.png"/> </div>
+              <!--总金额-->
+              <div style="width:210px; float:left" align="left"> <span id="BlackMoney" style="font-size:50px; width:210px;color:#99ca3b; text-align:left; height:60px; line-height: 60px; ">0</span> </div>
+            </div>
+          </div>
+        <!--确定，取消按钮-->
+          <div class="phonehintbtn">
+            <!--取消按钮-->
+            <img src="images/imgs/UI_2_01/UI_2_20.png" id="cancelphonehint" style="padding-right:20px"/>
+            <!--确定按钮-->
+            <img src="images/imgs/UI_2_01/UI_2_21.png" style="padding-left:20px" id="payisok"/> </div>
+      </div>
+    </div>
+	</div>
+	</div>
+   </div>
+   </div>
+</body>
+<script>
+var paymentmonry=0;
+    var payothermoney=0;
+	var overTimeDay=0;
+	var code="";
+	var Intervalid="";
+	var Intervalid1="";
+		var returnThing=false;
+	function OnCodeScan(code)
+		{
+	
+			var data = json(ebox.validateQRCode(code));
+			if(null == data || data == '{}'){
+				ms2('images/imgs/UI_TISHIVIEW/UI_2_21.png',"images/imgs/UI_TISHIVIEW/UI_2_ScanAgain.png");
+				return;
+			}
+			//$('#txt_tel').val(data.eiTakeUserPhone);
+			
+			Intervalid=setInterval(function(){
+			code=data.eiValidateCode;
+			if(code!="undefined")
+			{
+			
+				$('#inputphone').val(data.eiValidateCode);
+				submitQuJIan();
+			}
+			},1000);
+			
+	}
+		function submitQuJIan(){
+		clearInterval(Intervalid);
+			var r = json(ebox.CustQuJian('18171843322', $('#inputphone').val()));
+
+			if (r.success)
+			 {
+					if(r.status == '3'||r.status == '7')
+					{
+							if (r.type == 1010&&r.status != '7')
+							 {
+								 var door = json(ebox.GetUiData()).QuJianOrder.EILATTICENO;
+								  window.location.href="userOpenTheDoorPage.html?openedNo="+door;
+							}	
+							else if(r.type ==1012||r.status == '7')
+							{
+							$(".allback").show();
+							$(".shade").show();
+							$("#shadeHide").show();
+			                $(".overtimepaymoney").show();
+			                $("#phonehintnum").text();
+			                $("#inputphone").val("");
+			                 s="";
+							 
+							  paymentmonry=ebox.getPaymentMoney();
+	                     
+	                          payothermoney=ebox.getPayOtherMoney();
+							  overTimeDay=ebox.getOverTimeDay();
+							 
+							 //向所要支付的逾期金额赋值
+							 $('#OvertimePyaMoney').text(paymentmonry);
+							 //向所要支付的其他金额赋值
+							 $('#OtherPyaMoney').text(payothermoney);
+							 //总金额
+							  $('#BlackMoney').text(payothermoney+paymentmonry);
+							 
+							 $('#payisok').click(
+									function(){
+									returnThing=true;
+									$("#shadeHide").hide();
+									
+							         var rbox="";
+									  var door = json(ebox.GetUiData()).QuJianOrder.EILATTICENO;
+									  setTimeout(function(){
+									 ebox.expressCardInit();
+									 ebox.octopusCardCmd(2,0,0,0,'01',door,0,overTimeDay,paymentmonry,0,payothermoney,paymentmonry+payothermoney,0,'0001-1-1',0,0);
+									   },50);
+									$('#payisok').unbind("click");
+									Intervalid1=setInterval(function()
+											  {
+												rbox=ebox.returnCardReply();
+														if(rbox==1)
+														 {								 		
+															//支付成功，打开格
+															setTimeout(function(){
+															returnThing=false;
+															},1000);
+																
+															$(".shade").hide();
+									$(".allback").hide();
+			                        $(".overtimepaymoney").hide();
+															
+														
+															 var door = json(ebox.GetUiData()).QuJianOrder.EILATTICENO;
+															 window.location.href="userOpenTheDoorPage.html?openedNo="+door;
+													    	// ebox.expressCardInit();
+															
+															  clearInterval(Intervalid1);
+														 }
+														else if(rbox==2)
+														 {
+														 setTimeout(function(){
+														  returnThing=false;
+														  },1000);
+														$(".shade").hide();
+									$(".allback").hide();
+			                        $(".overtimepaymoney").hide();
+														
+														   //ebox.expressCardInit();
+															 clearInterval(Intervalid1);
+														 }
+											  },1000);
+											  //返回首页		 
+										});
+							}		 		         
+					}
+				
+				
+			}
+			else
+			 {
+				 	ms2('images/imgs/UI_TISHIVIEW/UI_2_21.png',"images/imgs/UI_TISHIVIEW/UI_2_ScanAgain.png");
+              
+               
+			 }
+		}
+		
+		
+	$(".allback #cancelphonehint").click(
+			function(){
+			$('#payisok').unbind("click");
+			$(".shade").hide();
+				$("#shadeHide").hide();
+			$(".allback").hide();
+			$(".overtimepaymoney").hide();
+			$("#phonehintnum").text();
+			$("#inputphone").val("");
+			s="";
+			
+			});
+			$("#TurnIndex").click(
+	function(){
+	if(returnThing==true)
+					return;	
+	geturl('index.html')
+	});
+	$("#WashPage").click(
+	function(){
+	if(returnThing==true)
+					return;	
+	geturl('WashClothesPage.html')
+	});
+
+$("#PswPage").click(
+	function(){
+	if(returnThing==true)
+					return;	
+	geturl('PswPickup.html')
+	});
+
+
+</script>
+</html>

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>派宝箱</title>
+    <link href="css.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/web.js"></script>
+   
+</head>
+<body>
+<embed src="mp3/柜门已经打开，请放入您的包裹.mp3" autostart="true" hidden="true" loop="false">
+    <div class="w1024 info_all">
+        <div class="w1024 info_t">
+            <img src="images/info/logo.png" />
+        </div>
+        <div class="info11_c">
+            <div class="tit f_b">
+                您已选择拒收货物，拒收理由：<span id="reason">不是我的包裹</span></div>
+            <div class="txt">
+                <span class="f30 fyw" id="door"></span>&nbsp;号箱门已经打开，请放入拒收包裹并关闭箱门系统将通知快递员进行处理，感谢您使用派宝箱！</div>
+            <div class="img">
+                <img src="images/info/qjimg.png" /></div>
+            <div class="time">
+                系统将在 <span class="timeint fyw f30">30</span> 秒后返回</div>
+        </div>
+        <div class="bot" align="center">
+            <div class="botcc" onclick="geturl('index.html')">
+                确定</div>
+        </div>
+        <div class="w1024 info_f fyh">
+            pakpobox v1.0
+        </div>
+    </div>
+</body>
+ <script type="text/javascript">
+        $(function () {
+            var id = getUrlParam('id');
+            var name = getUrlParam('name');
+            $('#reason').text(name);
+            ebox.CustSetExpressReason(id);
+			var door = json(ebox.GetUiData()).QuJianOrder.EILATTICENO;
+            $('#door').text(door);
+            ebox.OpenBox();
+        })
+
+        $(function () { setInterval("timeget()", 1000); });
+        function timeget() {
+            timetxt = $(".timeint").text();
+            if (timetxt == 0) {
+                location.href = "index.html";
+                return false;
+            }
+            timetxt--
+            $(".timeint").text(timetxt);
+        }
+        function CustExitQujian(id) {
+            geturl('index.html');
+        }
+    </script>
+</html>
